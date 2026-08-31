@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Interactive evidence instrument — research design triage sheet v0.1</title>
+<style>
+  :root{
+    --ground:#0E0E12;
+    --paper:#F2F2F5;
+    --muted:#9A9AA8;
+    --step-off:#6E6E80;
+    --rule:#2A2A34;
+    --card:#16161C;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;
+    background:var(--ground);
+    color:var(--paper);
+    font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
+    font-size:1rem;
+    line-height:1.55;
+    text-align:left;
+  }
+  .wrap{max-width:78rem;margin:0 auto;padding:2rem 1rem 4rem}
+  header{border-bottom:1px solid var(--rule);padding-bottom:1.5rem;margin-bottom:2rem}
+  h1{font-size:1.75rem;line-height:1.15;margin:0 0 .5rem;font-weight:700;max-width:34ch}
+  h2{font-size:1.125rem;line-height:1.25;margin:2.5rem 0 .25rem;font-weight:700;
+     text-transform:uppercase;letter-spacing:.08em}
+  h3{font-size:1.0625rem;line-height:1.3;margin:0 0 .75rem;font-weight:600;max-width:44ch}
+  p{margin:0 0 .75rem;max-width:70ch}
+  .meta{color:var(--muted);font-size:.875rem;line-height:1.4;margin:0}
+  .lede{max-width:66ch;color:var(--paper)}
+  .part-note{color:var(--muted);font-size:.875rem;margin:0 0 1rem;max-width:66ch}
+
+  .stack{margin:0 0 1rem;padding:0 0 0 1.5rem;max-width:60ch}
+  .stack li{margin-bottom:.35rem}
+  .stack b{font-weight:600}
+  .stack span{color:var(--muted)}
+
+  .legend{border:1px solid var(--rule);background:var(--card);padding:1rem;
+          margin:1.5rem 0 0;border-radius:.25rem}
+  .legend p{font-size:.875rem;color:var(--muted);margin:0 0 .5rem}
+  .legend p:last-child{margin-bottom:0}
+
+  .grid{display:grid;gap:1rem;grid-template-columns:1fr}
+  @media (min-width:44rem){.grid{grid-template-columns:1fr 1fr}}
+  @media (min-width:70rem){.grid{grid-template-columns:1fr 1fr 1fr}}
+
+  .card{border:1px solid var(--rule);background:var(--card);border-radius:.25rem;
+        padding:1.125rem;display:flex;flex-direction:column;gap:.5rem}
+  .num{font-size:.8125rem;color:var(--muted);letter-spacing:.06em;
+       text-transform:uppercase;margin:0}
+  .card dl{margin:.25rem 0 0;font-size:.9375rem}
+  .card dt{font-size:.75rem;text-transform:uppercase;letter-spacing:.07em;
+           color:var(--muted);margin-top:.75rem}
+  .card dd{margin:.2rem 0 0;max-width:48ch}
+
+  .tier{display:flex;align-items:center;gap:.5rem;flex-wrap:wrap;margin-top:.25rem}
+  .steps{display:inline-flex;gap:3px}
+  .steps i{display:block;width:14px;height:14px;border-radius:2px;
+           background:var(--step-off)}
+  .steps i.on{background:var(--paper)}
+  .tier-label{font-size:.8125rem;color:var(--paper)}
+
+  footer{margin-top:3rem;border-top:1px solid var(--rule);padding-top:1.5rem}
+  footer p{color:var(--muted);font-size:.875rem}
+  code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.875em}
+  a{color:var(--paper)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>The interactive evidence instrument: eighteen decisions</h1>
+  <p class="lede">A research design, not a product. Each card is one question a builder is forced
+  to answer. The order is the order in which the decisions resolve — an upstream error cascades
+  and cannot be recovered downstream.</p>
+  <p class="meta">Nightlife Culture &middot; version 0.1 &middot; 16 August 2026 &middot;
+  Derived from six desk-research strands. Canonical copy:
+  <code>ncvi-research/RESEARCH-DESIGN-v0.1.md</code></p>
+</header>
+
+<h2>The resolution stack</h2>
+<p class="part-note">When two considerations compete, the higher one wins. Rung 1 is not rung 3:
+a number can be methodologically impeccable and still expose someone.</p>
+<ol class="stack">
+  <li><b>Exposure and consent</b> — <span>who is harmed by being counted</span></li>
+  <li><b>Referential integrity</b> — <span>can the claim be traced to a thing and a source</span></li>
+  <li><b>Inferential integrity</b> — <span>does the method support the claim</span></li>
+  <li><b>The decision it enters</b> — <span>what the number has to be true enough for</span></li>
+  <li><b>Legibility</b> — <span>can the reader read it correctly</span></li>
+  <li><b>Standing</b> — <span>will anyone else reconcile to it</span></li>
+  <li><b>Register</b> — <span>how it feels, what it looks like</span></li>
+</ol>
+
+<div class="legend">
+  <p><b>Reading the tier meter.</b> Filled steps out of five show how much of the decision the
+  research already settles — five filled means a right answer exists and is measurable; one filled
+  means the literature offers a vocabulary and no verdict. The level is written alongside, so the
+  meter carries nothing on its own.</p>
+  <p>Ordinal quantities are encoded by amount filled in one ink, never as a colour scale, because
+  a red–amber–green ramp cannot contrast against the ground and against itself simultaneously and
+  fails worst under protanopia. Measured on this sheet: filled to unfilled 4.47:1, unfilled to
+  card 3.61:1, body text to card 16.12:1, muted text to card 6.49:1.</p>
+</div>
+
+<h2>Part 0 &middot; The spine</h2>
+<div class="grid">
+
+  <article class="card">
+    <p class="num">Chapter 1</p>
+    <h3>Whose decision does this have to survive, and what does that decision need to be true?</h3>
+    <div class="tier"><span class="steps" role="img" aria-label="Three of five steps filled">
+      <i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span>
+      <span class="tier-label">Mixed &mdash; Fixed that one instrument serves one decision;
+      Adaptable which</span></div>
+    <dl>
+      <dt>What the research settles</dt>
+      <dd>Green Book Review 2025: a single BCR "is not enough," no arbitrary thresholds, BCR under
+      one may still be value for money. But unmonetised benefits live in an annex and monetised
+      ones live in the ratio. Munzner: abstraction error has no immediate validation and cascades.</dd>
+      <dt>Refusal test</dt>
+      <dd>Name the decision in writing before any encoding work. CHC's Evidence Bank covers museums,
+      galleries, theatres, churches, cinema — no nightclub, no grassroots venue.</dd>
+    </dl>
+  </article>
+
+  <article class="card">
+    <p class="num">Chapter 2</p>
+    <h3>Who is exposed by being counted, and what would tell you before it happens?</h3>
+    <div class="tier"><span class="steps" role="img" aria-label="Four of five steps filled">
+      <i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span>
+      <span class="tier-label">Mostly Fixed &mdash; mechanisms documented, thresholds measurable</span></div>
+    <dl>
+      <dt>What the research settles</dt>
+      <dd>Form 696: private addresses, music style, target audience, originally ethnic group, 21
+      London boroughs, 2008&ndash;2017. Strava: voluntary traces exposed military bases. Queering
+      the Map: brigaded offline in 2018, moderation built afterwards.</dd>
+      <dt>The finding that cuts the other way</dt>
+      <dd>Arts largely <em>follow</em> gentrification; displacement unobservable in the two
+      strongest studies. The honest risk is vocabulary and coordinates, not causation.</dd>
+    </dl>
+  </article>
+
+</div>
+
+<h2>Part 1 &middot; Referential integrity</h2>
+<div class="grid">
+
+  <article class="card">
+    <p class="num">Chapter 3</p>
+    <h3>What is the unit, and what survives when it changes?</h3>
+    <div class="tier"><span class="steps" role="img" aria-label="Two of five steps filled">
+      <i class="on"></i><i class="on"></i><i></i><i></i><i></i></span>
+      <span class="tier-label">Adaptable &mdash; but Fixed that it is declared before minting</span></div>
+    <dl>
+      <dt>What the research settles</dt>
+      <dd>Every precedent picks one unit and inherits its blindness. Straw: a scene is defined by
+      differentiation, not membership &mdash; so "I'm part of this scene" is not a claim like "I
+      live here." Bowker &amp; Star's <em>torque</em>: venue biography versus register, not
+      retrofittable.</dd>
+      <dt>Refusal test</dt>
+      <dd>A venue closes and reopens, new name, new operator, same building. State what persists,
+      before the first ID is minted.</dd>
+    </dl>
+  </article>
+
+  <article class="card">
+    <p class="num">Chapter 4</p>
+    <h3>Does the identifier have to be adopted by others, and what do you owe if it is?</h3>
+    <div class="tier"><span class="steps" role="img" aria-label="Four of five steps filled">
+      <i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span>
+      <span class="tier-label">Mostly Fixed &mdash; the adoption mechanism is documented</span></div>
+    <dl>
+      <dt>What the research settles</dt>
+      <dd>ROR grew 356% annually against 12% for the scheme it replaced. UPRN was blocked by
+      licensing, not technology. ORCID's trick is collecting the iD via API, never typed.
+      MusicBrainz owes merge-with-redirect forever.</dd>
+      <dt>The opening</dt>
+      <dd>There appears to be no live-music venue identifier standard. Ticket Atlas already mints
+      stable IDs never derived from a platform slug &mdash; the architecture is right.</dd>
+    </dl>
+  </article>
+
+  <article class="card">
+    <p class="num">Chapter 5</p>
+    <h3>Is the definitions atlas a dictionary or a crosswalk?</h3>
+    <div class="tier"><span class="steps" role="img" aria-label="Four of five steps filled">
+      <i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span>
+      <span class="tier-label">Mostly Fixed &mdash; boundary-object theory is settled</span></div>
+    <dl>
+      <dt>What the research settles</dt>
+      <dd>"Consensus is not necessary for cooperation." Standardise <em>how</em>, not <em>why</em>
+      &mdash; procedural consensus displaces theoretical conflict. MVT's Grassroots Music Venue
+      definition got adopted by ACE and DCMS with an Elephant Test in it. Vagueness was not a bug.</dd>
+      <dt>Refusal test</dt>
+      <dd>Distribute residual categories, never concentrate them. A single top-level "Other" is
+      where queer, unlicensed and informal spaces go to become invisible to policy.</dd>
+    </dl>
+  </article>
+
+  <article class="card">
+    <p class="num">Chapter 6</p>
+    <h3>Where did this number come from, and can a machine answer that?</h3>
+    <div class="tier"><span class="steps" role="img" aria-label="Four of five steps filled">
+      <i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span>
+      <span class="tier-label">Mostly Fixed &mdash; PROV-O and RDA give an implementable answer</span></div>
+    <dl>
+      <dt>What the research settles</dt>
+      <dd>RDA Dynamic Data Citation: version and never delete, run a query store, checksum the
+      result, timestamp the query, and assign the identifier to <em>the query</em>, not a copy of
+      the data. Reported effort: a few person-months over six to twelve.</dd>
+      <dt>The finding that decides whether it works</dt>
+      <dd>Formal metadata gets bypassed because contributors describe data "for invisible, unknown
+      future users… from whom they receive little if any benefit." Metadata process, not only
+      product.</dd>
+    </dl>
+  </article>
+
+</div>
+
+<h2>Part 2 &middot; Inferential integrity</h2>
+<div class="grid">
+
+  <article class="card">
+    <p class="num">Chapter 7</p>
+    <h3>What does your aggregation rule commit you to, and can you state it in real units?</h3>
+    <div class="tier"><span class="steps" role="img" aria-label="Five of five steps filled">
+      <i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span>
+      <span class="tier-label">Fixed &mdash; measurable, and there is a right answer to compute</span></div>
+    <dl>
+      <dt>What the research settles</dt>
+      <dd>Under additive aggregation (21,1,1,1) equals (6,6,6,6). Translated: a corporate late-night
+      drinking economy with a collapsed grassroots scene scores the same as a modest broad ecology.
+      The 2010 HDI valued a year of life at $0.51 in Zimbabwe and ~$9,000 in the richest countries.</dd>
+      <dt>Refusal test &mdash; the best one in the research</dt>
+      <dd>How many new venues does your index say compensate for the loss of one forty-year-old
+      grassroots institution? If you cannot state the number, you do not understand your instrument.</dd>
+    </dl>
+  </article>
+
+  <article class="card">
+    <p class="num">Chapter 8</p>
+    <h3>Do your weights mean what you say they mean?</h3>
+    <div class="tier"><span class="steps" role="img" aria-label="Five of five steps filled">
+      <i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span>
+      <span class="tier-label">Fixed &mdash; the sensitivity index is computable and publishable</span></div>
+    <dl>
+      <dt>What the research settles</dt>
+      <dd>Asking a panel for <em>importance</em> then using a weighted sum is internally
+      inconsistent. HDI weights were "little more than cosmetic." THES: teaching quality 20% nominal
+      weight, 21% of variance; peer review 40% nominal, 81%. Budget allocation degrades past 10&ndash;12
+      items.</dd>
+      <dt>The incumbent fails this</dt>
+      <dd>Creative Footprint Rotterdam publishes 8.58 / 5.90 / 5.41 and a headline of 6.10. The mean
+      of its own parts is 6.63. No weights disclosed anywhere.</dd>
+    </dl>
+  </article>
+
+  <article class="card">
+    <p class="num">Chapter 9</p>
+    <h3>Can the instrument be audited, and at what N does the audit become impossible?</h3>
+    <div class="tier"><span class="steps" role="img" aria-label="Five of five steps filled">
+      <i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span>
+      <span class="tier-label">Fixed &mdash; published numeric thresholds, pass or fail</span></div>
+    <dl>
+      <dt>What the research settles</dt>
+      <dd>Indicator-to-sub-dimension r &ge; 0.3; Cronbach's &alpha; &ge; 0.70; one eigenvalue &gt;
+      1.0 per dimension; 5,000 Monte Carlo runs; publish a 90% confidence interval on rank, and
+      treat wider than ten positions as unreliable. The EU Monitor concedes one city in five is a
+      modelling artefact.</dd>
+      <dt>The decisive finding</dt>
+      <dd>This apparatus needs N in the hundreds. <b>A scored index at N=2 is unauditable in
+      principle.</b> Not a preference about form.</dd>
+    </dl>
+  </article>
+
+  <article class="card">
+    <p class="num">Chapter 10</p>
+    <h3>What comparative claims does your sample actually license?</h3>
+    <div class="tier"><span class="steps" role="img" aria-label="Four of five steps filled">
+      <i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span>
+      <span class="tier-label">Mostly Fixed &mdash; the method that fits is identifiable</span></div>
+    <dl>
+      <dt>What the research settles</dt>
+      <dd>QCA at 9&ndash;12 cases per place is at or below its floor: variants "systematically
+      supplement empirical data with artificial data" and can "commit causal fallacies of severe
+      magnitude." fsQCA relocates the arbitrariness to calibration.</dd>
+      <dt>What to do instead</dt>
+      <dd>Process tracing &mdash; straw-in-the-wind, hoop, smoking gun, doubly decisive. And Lijphart:
+      with two places you can only reduce variables. <b>Nine dimensions across two places is not a
+      comparison; it is nine anecdotes.</b></dd>
+    </dl>
+  </article>
+
+  <article class="card">
+    <p class="num">Chapter 11</p>
+    <h3>What can be published at every filter combination, not just the default view?</h3>
+    <div class="tier"><span class="steps" role="img" aria-label="Five of five steps filled">
+      <i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span>
+      <span class="tier-label">Fixed &mdash; a transplantable rule set already exists</span></div>
+    <dl>
+      <dt>What the research settles</dt>
+      <dd>ONS Census 2021 flexible table builder: marginal minimum, marginal dominance (&ge;20
+      outside the most common category), sparsity floors, variable limits, and
+      <b>classification completeness</b> &mdash; users cannot request category subsets, which is what
+      prevents differencing. Cell keys perturb consistently across datasets.</dd>
+      <dt>The compromise you may inherit if you declare it</dt>
+      <dd>Queries assessed independently, with no cumulative-risk tracking across a user's history.
+      ONS accepts this for the census. Unstated, the same choice reads as ignorance.</dd>
+    </dl>
+  </article>
+
+</div>
+
+<h2>Part 3 &middot; The felt layer</h2>
+<div class="grid">
+
+  <article class="card">
+    <p class="num">Chapter 12</p>
+    <h3>How first-class is the vibe, and what makes it evidence rather than decoration?</h3>
+    <div class="tier"><span class="steps" role="img" aria-label="Three of five steps filled">
+      <i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span>
+      <span class="tier-label">Two thirds measurable, one third representable only</span></div>
+    <dl>
+      <dt>What the research settles</dt>
+      <dd>Split it in three. <b>Produced condition</b> — fully researchable, and the layer where the
+      resident DJ and door person become visible as skilled labour. <b>Perceived quality</b> —
+      ISO 12913-3 gives an eight-attribute circumplex in which <em>vibrant</em> is a standardised
+      perceptual attribute of a place. <b>Singular excess</b> — representable, not measurable.</dd>
+      <dt>The one decision that separates evidence from advocacy</dt>
+      <dd>Pre-commit to reporting <em>discordance</em> between the qualitative and quantitative
+      strands as a finding rather than a failure.</dd>
+    </dl>
+  </article>
+
+</div>
+
+<h2>Part 4 &middot; Legibility</h2>
+<div class="grid">
+
+  <article class="card">
+    <p class="num">Chapter 13</p>
+    <h3>Does the interaction carry meaning, and what evidence would settle it?</h3>
+    <div class="tier"><span class="steps" role="img" aria-label="Four of five steps filled">
+      <i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span>
+      <span class="tier-label">The default is settled; the exceptions are narrow and named</span></div>
+    <dl>
+      <dt>What the research settles</dt>
+      <dd>Adding narrative to exploratory visualisation is null to negative across ~4,300 sessions:
+      the <em>no-story</em> group explored twice as long, 108.8s against 54s. Only 35.4% followed
+      the intended sequence. The famous 10&ndash;15% click figure is conference lore, not a study.</dd>
+      <dt>The narrow exceptions</dt>
+      <dd>Prediction-before-reveal (~4pp, visual modality only, unfamiliar data only) and staged
+      animated transitions (helps until over-staged). Everything else must beat a known null.</dd>
+    </dl>
+  </article>
+
+  <article class="card">
+    <p class="num">Chapter 14</p>
+    <h3>How do you show uncertainty without making the number look worthless?</h3>
+    <div class="tier"><span class="steps" role="img" aria-label="Five of five steps filled">
+      <i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span>
+      <span class="tier-label">Fixed &mdash; the most empirically settled area in the research</span></div>
+    <dl>
+      <dt>What the research settles</dt>
+      <dd>Quantile dotplots at 50 dots reached 97% of optimal expected payoff (n=408), beating a
+      no-uncertainty control and halving variance. Textual intervals were unstable. Hard visual
+      boundaries induce inside/outside categorisation that "persists even with extensive
+      instructions."</dd>
+      <dt>The reader-side finding that changes the interface</dt>
+      <dd>Baseline correctness on misleading charts is 0.39 against 0.80 on normal ones, and the
+      hardest thing to detect is <b>missing normalisation</b>. Put the denominator in the interface,
+      not the methods note.</dd>
+    </dl>
+  </article>
+
+  <article class="card">
+    <p class="num">Chapter 15</p>
+    <h3>Who can use it, and is that a build step or a bespoke cost?</h3>
+    <div class="tier"><span class="steps" role="img" aria-label="Five of five steps filled">
+      <i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span>
+      <span class="tier-label">Fixed &mdash; auditable, and there is tooling</span></div>
+    <dl>
+      <dt>What the research settles</dt>
+      <dd>Chartability: 50 heuristics, 10 flagged Critical, 2&ndash;8 hours per audit, adopted by
+      Microsoft, Highcharts, Jupyter and Vega-Lite. Olli converts Vega and Observable Plot specs
+      into keyboard-navigable described trees, grounded in a 13-participant study.</dd>
+      <dt>The argument to make internally</dt>
+      <dd>Accessibility regulations almost certainly do not bind you. WCAG 2.2 AA is a
+      <em>distribution</em> decision: a government user cannot embed a non-compliant product without
+      inheriting the problem.</dd>
+    </dl>
+  </article>
+
+</div>
+
+<h2>Part 5 &middot; Standing</h2>
+<div class="grid">
+
+  <article class="card">
+    <p class="num">Chapter 16</p>
+    <h3>What does your own standard already assert, and what would an external one add?</h3>
+    <div class="tier"><span class="steps" role="img" aria-label="Three of five steps filled">
+      <i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span>
+      <span class="tier-label">Reframed on review &mdash; a choice between two working models,
+      not a ladder</span></div>
+    <dl>
+      <dt>What the research settles</dt>
+      <dd>Style Guide v1.4 §06 already declares its own precedence rule and contains refusals: "a
+      comparison without this note is not publishable." The Code refuses nothing. <b>Adopting it
+      does not raise your floor &mdash; it makes your floor legible to people who will never read
+      your style guide.</b></dd>
+      <dt>The case that reframes it</dt>
+      <dd>Centre for Thriving Places publishes the TPI, self-funded, and is <b>not</b> on the
+      voluntary register. Carnegie UK, its nearest peer, is. Both work. The two things an internal
+      standard cannot self-supply are <em>independence</em> and <em>legibility to a stranger</em>.</dd>
+    </dl>
+  </article>
+
+  <article class="card">
+    <p class="num">Chapter 17</p>
+    <h3>What makes others adopt it, and what does success cost you?</h3>
+    <div class="tier"><span class="steps" role="img" aria-label="Four of five steps filled">
+      <i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span>
+      <span class="tier-label">Mostly Fixed &mdash; the mechanism repeats across five cases</span></div>
+    <dl>
+      <dt>What the research settles</dt>
+      <dd>Solve an acute visible failure; launch minimal; make the data un-encloseable; get one
+      actor to <em>require</em> it; inherit an installed base; charge for services, not data; govern
+      in public. FAIR's principle A2 &mdash; metadata accessible even when data is not &mdash; is
+      the technical shape of "knowledge layer shared, data layer protected."</dd>
+      <dt>The live proof, in Bristol</dt>
+      <dd>Centre for Thriving Places gives away "headline scores and interactive maps" and funds the
+      framework by tiered subscription &mdash; partly to ensure "investment comes from sources that
+      will not seek to adapt its purpose or reach." A governance argument in a pricing statement.</dd>
+      <dt>The uncomfortable finding</dt>
+      <dd>Successful infrastructure becomes invisible. And you cannot have comparability across time
+      <em>and</em> accuracy in the present. Pick, and say which.</dd>
+    </dl>
+  </article>
+
+  <article class="card">
+    <p class="num">Chapter 18</p>
+    <h3>Advocacy or evidence: what happens when the number is inconvenient?</h3>
+    <div class="tier"><span class="steps" role="img" aria-label="Three of five steps filled">
+      <i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span>
+      <span class="tier-label">One Fixed mechanism; the rest is a position you take</span></div>
+    <dl>
+      <dt>What the research settles</dt>
+      <dd>A Culture Secretary admitted deploying contested impact statistics as "ammunition."
+      Matarasso's study had no baseline, no control, ~75% non-response. An organisation trade bodies
+      reconcile to is structurally exposed, because trade bodies are advocacy organisations.</dd>
+      <dt>The one mechanism that distinguishes you</dt>
+      <dd>A pre-registered methodology and a published correction policy, in place before you publish
+      a number. DCMS has already conceded the sector's evaluation is incomparable &mdash; an external
+      standard is welcome, not resented.</dd>
+    </dl>
+  </article>
+
+</div>
+
+<footer>
+  <h2>What this does not do</h2>
+  <p>It does not choose the artefact, the robustness standard, or what "source of truth" means
+  operationally. Those were asked as questions and correctly refused &mdash; they are what the
+  research is for. It contains no rules: rules come from real artefacts breaking.</p>
+  <p>Ten gaps are logged against this design in the companion document, in the four-field format,
+  separately from the findings. Two are red. The ADE&thinsp;&times;&thinsp;VibeLab Global Nighttime
+  Culture Index launches at ADE Pro in October 2026 with no methodology published. And chapter 16
+  was originally framed as a ladder of external badges when an internal standard already existed
+  &mdash; the correction came from Carly on review, which is the wrong way round.</p>
+  <p>This sheet obeys the book it came from. Real headings, no skipped levels, reflows to 320&nbsp;px
+  with no two-dimensional scrolling, survives forced line height and 400% zoom, no container sized
+  to its text, system fonts only so nothing substitutes, sentence case, left aligned, ordinal values
+  encoded by amount filled rather than by a colour ramp, and nothing carried by colour alone.</p>
+</footer>
+
+</div>
+</body>
+</html>
