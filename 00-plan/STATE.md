@@ -55,3 +55,30 @@ template → acronym pass → seven tests → ledger entry → working note → 
 device_commit_files (git index.lock on the repo may still need a local `rm`). Chat summaries
 short. Confidential items (Vibe Setting Framework, 2026 data) cited, never reproduced at
 length. If blocked, log here and stop cleanly.
+
+## UPDATE — 4 October 2026 (picked back up)
+**Nothing in the book changed between 17 Aug and today.** Pushed 31 Aug (commit 62e665e). The
+five decisions remain open and unstarted: (1) Carly's redlines on Ch 9–14 — never happened;
+(2) HTML handbook; (3) verification sprint; (4) probe programme; (5) live prototype.
+Since 1 Oct the book is read in full by THE-PLAN step 6 (dataviz design standards,
+`~/Documents/GitHub/nightlife-culture-dataviz`) as the implementation brief for chart rules —
+read only, never written to. The book is therefore load-bearing for live work while six of its
+chapters are unsteered.
+
+**New this session:** `05-book/reader.html` — a navigable, searchable reader built from
+`04-chapters/*.md` on the design system (v1.4.1 skill). Front matter carries: where we got to;
+the five decisions with dependencies; the flagged glosses G1–G7 in four-field format; the
+still-to-do register (validate / probe / prototype and build). It is regenerated from the
+chapter files, never edited by hand, and it is **not** the handbook (decision 2).
+
+**Flagged glosses (G1–G7, detail in the reader):** Ch 9–14 unverified twice over (red);
+suppression threshold is a collection-design problem not only a display one — cf. UKDF review
+GAP-13 (red); gaming the vibe score / hostile contributors untested (red); who speaks for a
+scene (amber); phone-first unowned (amber); change over time barely treated (amber); committee
+export inherits the production-chain failure FB-09/FB-10 (amber).
+
+**Housekeeping done:** repo git identity set to Carly's GitHub no-reply address; stale lock
+files moved to `.git/stale-locks/` (safe to delete). Git write operations through the device
+bridge leave lock files behind — commit from GitHub Desktop or Terminal, not via the bridge.
+
+**Still awaiting Carly's steer. Nothing starts unprompted.**
