@@ -1544,3 +1544,35 @@ FRC, "Improving the quality of 'comply or explain' reporting" (2021) — a regul
 ### Delivered (7 October 2026)
 
 `06-register/` (build script; `rule-register.csv` and `.md`; `deviation-log.md`; `work/` with the inputs, the classification files and the two library reports); `01-sources/LIBRARY-PASS.md`; `03-tests/PROBES.md`; this entry; `00-plan/STATE.md`; `AGENTS.md` (one row). Carly reviews and commits.
+
+## Entry 18 · Closing the loop: the repository put in order for a new reader
+
+*7 October 2026, after Carly committed everything through Entry 17 and asked that the repository be brought into line with the completed work, so that the research can be handed to another agent "to start to see it for the research it is". No research; an audit of the repository against what now exists, and the changes it needed. Framed here before the changes were made.*
+
+### Framed
+
+**The question.** If someone opens this repository cold, does every file that claims to describe the work describe it as it is; can they find the book, the way in, and the things to distrust; and is anything in the tree left over from a plan that has since changed?
+
+**What was audited.** `README.md`, `AGENTS.md`, `CLAUDE.md`, `00-plan/STATE.md`, `archive/README.md`, `_to_delete/README.md`, the folder tree, the ledger's and the log's own opening notes, Chapter 0's pointers, Chapter 16 against the register built from it, the reader's note, and whether the two build scripts run from the repository root.
+
+### Found, and done
+
+- **`README.md` described a book about to begin** ("Version 2 begins with Chapter 1"), listed neither the register nor the library pass, and named an empty `06-probes/` beside `06-register/`. Rewritten as the front door: where the book stands; a reading order of eight steps that starts with the handover, the legend and the reader; the seventeen chapters in a sentence each; nine things to know before relying on it; the folders; how to regenerate; the rules that travel.
+- **`00-plan/STATE.md` had grown into a 50 KB chronology**, accurate and unreadable as a handover, and still listed the commit as outstanding. The chronology is archived whole (`archive/STATE-2026-10-07-chronology.md`) and the file rewritten for a new reader: one paragraph; what exists and where; what to know before relying on it; what is open and whose it is, with the full chapter-by-chapter list kept; what an agent may and may not do; how to regenerate.
+- **`AGENTS.md`** gained the two flags the chapters use and Chapter 0 now defines (`[Revisit → Ch n]`; the widened `[Counterbalance → X]`), three rows in "Where things go", and a dated section, "Now that the chapters exist", saying that rule 4 still holds, that the register is generated, and that new work gets a log entry. The method Carly set on 5 October is otherwise untouched.
+- **Chapter 0** now points at the files its glossary describes — the register, the deviation log, the library pass, the probes — and says that the register is the current statement where it differs from a chapter's table.
+- **Chapter 16 and the register disagreed, and nothing in the chapter said so.** The chapter estimates about two hundred Fixed rules after re-basing; the register built from its own rules has 280. A dated postscript was added at the end, with a one-line pointer under the title; the body is unchanged. The postscript says what the estimate got wrong (the unmarked Fixed rows and the procedures are mostly build checks), what stands, what is reopened (whether 245 hard stops are obeyed or routed around — the cold reader's objection to draft 1), that the ten identifiers in §8 are illustrative, that truth 2 leans on a hard stop more than its wording says (Paterno 2009, read in full), and that DL-001 exists with its result pending. This is the one place a chapter was added to without Carly's word; it is an addition and marked as one.
+- **The ten corrections from the library pass were not applied**, as before. They are now named in the README, in STATE, in the reader's note and in Chapter 0's glossary, so that no route into the chapters misses them.
+- **The ledger** gained an opening note on its layout (sections 1–4 are version 1's, with version 1's chapter numbers), two stale paths corrected to `archive/raw-2026-08/`, and section 21, the library pass: 92 distinct sources — 31 read in full, 21 open but walled, 40 for request — compiled by a smaller model from the two reports. `LIBRARY-PASS.md`'s summary said ninety-six distinct sources; four appear in both reports, and the count is corrected to ninety-two.
+- **`02-research-notes/` and `06-register/` had no README**; each has one. The first says which notes are version 2's and which carry version 1's chapter numbers, and that the compilation cites Chapter 0 by the lines of its archived 6 October text. The second describes every working file and says which one to edit to change a tier.
+- **Two empty placeholder folders** from August, `06-probes/` and `raw/`, were moved to `_to_delete/` with a line each in its README; `07-checks/` is kept, as the place Chapter 16 §8's build checks would go. `archive/README.md` lists the two files archived on 7 October.
+- **The reader** was rebuilt (Chapter 0 and Chapter 16 changed); its note now carries the three warnings; a section whose heading begins "Postscript" opens by default. Checked at desktop and phone widths: seventeen chapters, no horizontal scroll, no script errors.
+- **The register** was re-parsed and rebuilt after Chapter 16's lines moved; `rule-register.csv` is byte-identical to the committed file, which is the test that it regenerates.
+
+### Left as found, and why
+
+`00-plan/BRIEF-v2.md` governs and was not touched; its section 7's estimate of "seventeen chapter sprints … four to six weeks" is history. `CLAUDE.md` is one line and correct. `01-sources/data examples/` holds a spreadsheet of Carly's from 2025, which is not the book's and was not opened. Version 1's notes stay in `02-research-notes/` because the ledger cites them there. The chapters' own rules tables, their "Fixed as a stance" wordings and the ten uncorrected claims stand as printed. Earlier log entries that give superseded counts (the reader at "about 460,000 words"; "ninety-six sources") are not rewritten: this entry carries the corrections — about 485,000 words; ninety-two sources.
+
+### Delivered (7 October 2026)
+
+`README.md`; `AGENTS.md`; `00-plan/STATE.md`; `archive/STATE-2026-10-07-chronology.md`; `archive/README.md`; `_to_delete/README.md` and the two moved placeholders; `02-research-notes/README.md`; `06-register/README.md` and `work/rows.csv`; `04-chapters/ch00-…` and `ch16-…`; `05-book/reader.html` and `build_reader.py`; `01-sources/SOURCES.md` (§21 and the opening note), `LIBRARY-PASS.md` (the count) and this entry. Carly reviews and commits.

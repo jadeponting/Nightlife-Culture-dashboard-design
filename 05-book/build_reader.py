@@ -50,7 +50,7 @@ CHAPTERS = [
      "Fixed in three senses; a short Fixed register the build enforces; one deviation log with nine lines; the twelve records as one."),
 ]
 
-OPEN_SECTIONS = re.compile(r"(the question|60-second|holds true|the truths|^the rules|what holds)", re.I)
+OPEN_SECTIONS = re.compile(r"(the question|60-second|holds true|the truths|^the rules|what holds|^postscript)", re.I)
 
 
 def classify(soup):
@@ -243,7 +243,7 @@ section.chapter{{margin-top:var(--nc-sp8)}}
 <div id="search-results"></div>
 <h2 class="nc-section-head nc-heading-2" id="contents"><span class="nc-section-title">Contents</span></h2>
 <nav class="nc-contents" aria-label="Contents">{contents}</nav>
-<div class="nc-claude-note"><p class="nc-label">Claude note · not for publication</p><p class="nc-small">Draft reader. Chapters 1–16 are at draft 2 and have not yet been read by Carly; Chapter 0 was revised on 7 October 2026 as a transcription of Chapter 16 §7. The manuscript\'s marks (†, "(read once)", "(two passes)") are rendered here as bracketed words, as Chapter 0 now says; the chapters\' rules tables stand as printed, and Chapter 16\'s register carries the re-based tiers. The chapter files in the repository are the source of truth; regenerate this page with <code class="nc-file-reference">05-book/build_reader.py</code> after any edit.</p></div>
+<div class="nc-claude-note"><p class="nc-label">Claude note · not for publication</p><p class="nc-small">Draft reader. Chapters 1–16 are at draft 2 and have not yet been read by Carly; Chapter 0 was revised on 7 October 2026. Before relying on a claim: the library pass (<code class="nc-file-reference">01-sources/LIBRARY-PASS.md</code>) proposes ten corrections that have not been applied to these chapters; the rule register (<code class="nc-file-reference">06-register/</code>) is the current statement of each rule\'s tier where it differs from a chapter\'s table; and Chapter 16 ends with a postscript. The manuscript\'s marks (†, "(read once)", "(two passes)") are rendered here as bracketed words. The chapter files in the repository are the source of truth; regenerate this page with <code class="nc-file-reference">05-book/build_reader.py</code> after any edit.</p></div>
 """
     script = """<script>
 (function(){

@@ -3,6 +3,8 @@
 *Dashboard Design · Part 4: The boundary and the practice*
 *Version 2, draft 2 · 6 October 2026 · research log, Entry 16*
 
+*Postscript added 7 October 2026 (Entry 17): the register this chapter specifies has since been built, and its count of Fixed rules is higher than the estimate printed below; the library pass has also qualified one of the chapter's sources. The body is unchanged; the postscript at the end says what differs.*
+
 ---
 
 ## Before you start
@@ -693,3 +695,17 @@ Fetched 6 October 2026 unless stated. Status after each: *verified* (presence re
 ---
 
 *The chapter closes Part 4 and the book's teaching chapters. What follows it is work and not writing: Chapter 0's revision as a transcription; the register and the log as files; the reader rebuilt with Chapters 9 to 16; and the decisions in section 12, which are Carly's. The book is at draft 2 in sixteen chapters, and nothing in it is finished until it has survived her.*
+
+---
+
+## Postscript, 7 October 2026 — what the register and the library pass showed
+
+*Added after the chapter, and not part of its argument as written. The body above is unchanged. Research log, Entry 17.*
+
+**The estimate of about two hundred Fixed rules is not confirmed.** Sections 3 and 8, the 60-second version and the list of things the chapter will not state as truths all carry an estimate made before the register existed: that re-basing would leave "perhaps two hundred" Fixed rules and about two hundred and fifty Adaptable. The register was built the next day (`06-register/rule-register.csv`; 377 rules from the 513 source rows, one per duplicate group, each row classified by this chapter's own rules with its reason recorded). It has 280 Fixed rules — 245 requirements and 35 sequences — which is 74 per cent, with 56 house defaults, 34 Adaptable and 7 Decorative, and one statement of the record listed apart. The re-basing did what section 3 said it would to the stances: 51 of the 90 became house defaults. What the estimate got wrong is the 212 unmarked Fixed rows and the 102 procedures, most of which proved to be presences, thresholds, lines of a record or prohibitions that a build can scan, recompute or check by date — requirements in this chapter's own sense. Section 3's first reading, which the chapter set aside ("dashboards are a subject of right answers, so the book's 89 per cent is the subject's"), is therefore nearer the truth than the chapter allowed, and the register's share is the Decision Book's own 74 per cent, not below it. What stands: the three senses; the retirement of "stance"; the eleven reconciliations; the entry; the one record and the one log. What is now open, and was the cold reader's objection to draft 1: whether a register of 280 Fixed rules, 245 of them build checks, is "short enough to be read", and whether hard stops at that number are obeyed or routed around. Truth 2 is the test of it, and the build's first year is where it is measured. `[Prototype flag]`
+
+**The identifiers in section 8's ten first rows are illustrative.** The built register numbers its rules in its own order, so `DD-001` to `DD-010` there are not the register's `DD-001` to `DD-010`; the register's notes refer to those ten as "Chapter 16 §8 row n". The third ranking rule section 7 states — whether position is shown at all — has no source row of its own in any chapter and is carried in the register as the open part of the prohibition.
+
+**Truth 2 rests on a tier that could not be disobeyed, more than its wording says.** Section 6 already notes that the tiered site in Paterno et al. 2009 used hard stops for its severest alerts. Read in full on 7 October, the paper says the hundred per cent was "by design since this was a 'hard stop'", and that the lowest tier cannot be compared; the evidence that setting rules apart raises compliance where people are free to override is the middle tier alone, 29 against 10 per cent. Truth 2's clause "the severe rules are obeyed only where they are set apart", and the rule in the table that cites it, should be read with that limit. This is one of ten corrections the library pass proposes across the book (`01-sources/LIBRARY-PASS.md`); none has been applied to any chapter, and each awaits Carly.
+
+**The first entry in the deviation log exists.** `06-register/deviation-log.md` carries the nine-line spine, the two typed line sets, and DL-001 — Chapter 12's in-frame furniture against official practice — as *proposed*, with its test result pending the first build. The result printed in section 11's example ("18 of 20") was invented for method and is not in the log.

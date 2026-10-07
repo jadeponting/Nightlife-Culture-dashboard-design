@@ -4,7 +4,7 @@
 
 ## What the pass found, in one page
 
-Ninety-six distinct sources were attempted (44 behind the Chapter 1–9 rows; 18 behind the Chapter 10–16 rows; 34 named texts). Thirty-four were read in full or in the part that matters — an open copy found and opened; twenty-one more are open but behind a wall the fetch tool cannot pass (PubMed Central's challenge page; robots rules; the tool's page cap) and need a browser, not a library; forty-one have no open copy and carry a citation for a library request. Of the thirty-four read, eleven simply support the chapter as written, and twenty-three change something: nine of substance, the rest a caveat or a number.
+Ninety-two distinct sources were attempted (the two reports below count ninety-six between them, four sources appearing in both: 44 behind the Chapter 1–9 rows; 18 behind the Chapter 10–16 rows; 34 named texts). Thirty-one were read in full or in the part that matters — an open copy found and opened; twenty-one more are open but behind a wall the fetch tool cannot pass (PubMed Central's challenge page; robots rules; the tool's page cap) and need a browser, not a library; forty have no open copy and carry a citation for a library request. Of the thirty-four readings the two reports made of those thirty-one sources, eleven support the chapter as written and twenty-three change something: nine of substance, the rest a caveat or a number. The ledger's section 21 (`01-sources/SOURCES.md`) lists all ninety-two with their status.
 
 **Corrections proposed, for Carly to approve before any chapter changes** (each is traced in the tables below, with the exact sentence and where it sits):
 

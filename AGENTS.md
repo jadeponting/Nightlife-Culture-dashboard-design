@@ -28,9 +28,10 @@ Used in chapters, the log and the ledger, always in square brackets so they can 
 | `[Further research]` | A thread worth pulling that this chapter did not have room or evidence to finish |
 | `[Prototype flag]` | Something the Vibe Map can settle with evidence that no literature can |
 | `[Validate with users]` | Something to test in conversation with the three user groups or the scenes |
-| `[Revisit at end]` | A question to return to once all chapters exist, because its answer depends on them |
+| `[Revisit → Ch n]` | A question that belongs to a later chapter and is handed to it |
+| `[Revisit at end]` | A question to return to once all chapters exist, because its answer depends on them (Chapter 16 answered these) |
 | `[Rich reference]` | A source Carly should read in her own time or return to when building |
-| `[Counterbalance → Ch n]` | This finding pulls against an earlier chapter's; recorded, not resolved |
+| `[Counterbalance → X]` | This finding pulls against an earlier chapter's, or against the design system, the Decision Book or version 1; recorded, not resolved |
 
 ## The roles, and how the work is split for performance
 
@@ -63,13 +64,25 @@ Used in chapters, the log and the ledger, always in square brackets so they can 
 | `00-plan/STATE.md` | The handover. Read first in any new session |
 | `01-sources/SOURCES.md` | The ledger — every source, how read, verified when |
 | `01-sources/RESEARCH-LOG.md` | The journey — one appended record of what was looked for, found, learned, left out and flagged, chapter by chapter |
+| `01-sources/LIBRARY-PASS.md` | What was found when abstract-only sources were read in full; the corrections proposed and not yet applied |
 | `02-research-notes/` | Working notes and agent returns worth keeping |
-| `03-tests/` | Probe candidates and protocols, as they accumulate |
+| `03-tests/` | Probe candidates (`PROBES.md`) and protocols, as they accumulate |
 | `04-chapters/` | The chapters, version 2 |
-| `05-book/` | The reader, regenerated at the end of each part |
+| `05-book/` | The reader, regenerated after any chapter edit |
 | `06-register/` | The rule register and the deviation log, generated from the Chapter 16 compilation by `build_register.py`; `work/` holds the classification files that carry each row's re-basing |
+| `07-checks/` | Reserved for the build-time checks Chapter 16 §8 specifies; empty |
 | `archive/` | Superseded material still cited somewhere, with a README |
 | `_to_delete/` | What Claude believes can go; Carly decides |
+
+## Now that the chapters exist
+
+*Added 7 October 2026, when the seventeenth chapter was done. The method above is how the book was made; this is how to work with it now.*
+
+The book is at draft 2 and Carly has not yet read it. An agent arriving now is a reader first: start from `00-plan/STATE.md`, which says what exists, what to know before relying on it, and what is open. Three things follow from the rules above and are easy to miss.
+
+- **Rule 4 still holds.** A finding that bears on a chapter — a source read in full, a count that differs, a test result — is logged and flagged, and the chapter changes on Carly's word. `01-sources/LIBRARY-PASS.md` is the standing example: ten corrections proposed, none applied. A dated postscript at the end of a chapter, which leaves its body alone, is the most an agent adds unasked (Chapter 16 has one).
+- **The register is generated, not edited.** `06-register/rule-register.csv` comes from the compilation and the classification files in `06-register/work/`; change a chapter or a classification row and regenerate.
+- **New work gets an entry.** Frame it in the research log before starting, as Entry 19 onwards; ledger its sources with how each was read; update `STATE.md`.
 
 ## What never happens here
 
