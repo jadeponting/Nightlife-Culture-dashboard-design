@@ -133,3 +133,31 @@ Noted as a frame for every standards claim. Practical consequences for the book:
 4. **Is "nobody has built this" a claim you want to make in public?** If yes, the landscape search in Sprint B is worth its cost; if it is internal, scoping the sentence is enough.
 5. **Gapminder** — can you do the five-minute observation in 3.4?
 6. **Budget.** Ten sessions is the honest estimate. If you want it faster, Sprint C is where depth can be traded; Sprints A and B should not be.
+
+---
+
+## Addendum — 5 October 2026, work started
+
+**Carly's steer:** enough context to begin; plug gaps later. Started with Sprint A.
+
+**New context absorbed (read, not acted on beyond the book):** the UKDF deck v2.1 (the Vibe Map definition, three user groups, four discovery tests, team, NTE Summit 7–11 Feb 2027); the `vibe-map-prototype`, `vibe-map-ukdf-scope` and `nightlife-culture-organisational-framework` repository instructions; Style Guide v1.5 and the rebuilt skills (design-decisions digest `33e104d4`, nightlife-culture-design v1.5).
+
+**Assumptions taken in Carly's absence (reverse any of them):**
+1. The third reader is the build team — creative technologists and analysts — then the facilitators of the three testing groups. Chapter 0 is written for them.
+2. Chapter 0 is numbered 0 and sits as front matter; the chapter count stays at fourteen.
+3. "Not the dashboard genre" is a Nightlife Culture steer, Adaptable, not a brief rule. The brief is not amended.
+4. The gallery's white-space claim is scoped to the instruments examined; the landscape search waits for Carly's decision on whether the claim goes public.
+5. Kind is a new column; the Decision Book's three tiers are kept as the firmness scale and explained in plain words, rather than inventing a second scale.
+6. Gap-register rows keep red/amber/yellow internally; anything that travels uses words (design system interim rule: never RAG tags in public).
+
+**Corrections the new context forces on the chapters (to be applied in Sprints C and D):**
+- Chapter 8's gap vocabulary must match the prototype data contract's six kinds of nothing: zero, free, unavailable, unknown, not collected, suppressed.
+- Chapters 5 and 6: the prototype's rule "do not introduce a composite cultural-value score without a specific adopted method" and "all vibes are valid" are now Nightlife Culture rules; the book's identity/conditions split and recipe-on-the-face already comply and should cite them.
+- Chapter 6: Skiddle's public listings API carries listings, not transactions; postcode-level origination depends on the separate partner-database route. The amber gap sharpens; the chapter's mechanics paragraph must say which route each claim needs.
+- Worked examples: Bristol, then Bath and North East Somerset, South Gloucestershire and North Somerset are the project's priority places. Existing examples (Croydon, Hull, Stokes Croft) stay as illustrations; at least one West of England example is added per chapter where the data route is realistic.
+- Every chapter's conflict log re-points from v1.4 to v1.5. The reader must be rebuilt on v1.5 (no H5/H6; one type rule; status chips).
+- The book is positioned explicitly as research for this instrument, not a generic design handbook (prototype AGENTS.md).
+
+**Blocked until the computer is linked again:** the ledger (`01-sources/SOURCES.md`) and research notes are on Carly's machine, so Sprint B's verification cannot start; commits to the repo cannot be made. Work continues in the session and is delivered as files; everything lands in the repo when the link returns.
+
+**Delivered 5 October:** `04-chapters/ch00-how-to-read-this-book.md` (new); `04-chapters/ch01-the-default-view.md` version 2 (the travel rewrite, as the exemplar for Chapters 2–14). Next: Chapters 2–14 in order under the same conventions, one or two per session, each ending with a note.
