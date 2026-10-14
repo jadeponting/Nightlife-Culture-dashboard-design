@@ -1,15 +1,10 @@
 # Chapter 1 — What a dashboard is for
 
 *Dashboard Design · Part 0: Foundations*
-*Version 2, draft 2 · 5–6 October 2026 · revised after a cold read and an independent verification pass (research log, Entry 1)*
 
 ---
 
-## Before you start
-
-This is the first chapter of a research book written for Nightlife Culture, a creative policy studio led by Carly Heath, about how dashboards work and why. The book exists to support the Vibe Map — a planned public, non-commercial, interactive account of the people, activity, value and support systems that sustain a place's nightlife culture, built first for the West of England. You do not need to know anything else about the project to read this chapter. Where it refers to Carly, it means the studio's founder, whose brief it answers; where it refers to the Vibe Map, it is illustrating, not specifying.
-
-Two conventions, explained fully in Chapter 0 and summarised here so you are not left guessing. Every rule in this book carries a **kind** — *Standard* (an external rule nobody here wrote), *Evidence* (a named study), *Reading* (our interpretation, open to challenge) or *Nightlife Culture* (a decision or finding of the studio's own) — and a **tier**: *Fixed* is a hard line with a right answer; *Adaptable* is a stated default you may argue with and must log if you leave; *Decorative* is free. And flags in square brackets mark loose ends: `[Further research]`, `[Prototype flag]` (something the Vibe Map can settle with its own data), `[Validate with users]`, `[Revisit at end]`, and `[Rich reference]` (worth your own time).
+*Reading this chapter.* This is one chapter of *Dashboard Design*, Nightlife Culture's research book on how evidence becomes a display a reader can trust, read and act on. The studio ("the house" in some chapters) is Nightlife Culture, a creative policy studio; the brief is its founder Carly Heath's commission for the book, and her eight ways a dashboard fails, the failure register, run through it. The Vibe Map, the studio's prototype for showing a place's nightlife culture, appears only as an illustration, never as a specification. "Version 1" is the book's archived first draft, whose positions this version re-tests against the sources. Every rule carries a kind (where it comes from: Standard, Evidence, Reading, Practice or Nightlife Culture) and a tier (how firm it is: Fixed, Adaptable or Decorative); Chapter 0 explains both, and the three senses of Fixed: a requirement that can be checked, a sequence whose order is the hard line, and a statement of the record. A dagger (†) marks a source read at the authors' abstract or summary only; "secondary" a quotation reached through a named reproduction; "(read once)" a quotation returned on a single reading and not confirmed by a second. Chapter 0 holds the glossary of the words the chapters share; each chapter lists its own coinages before its sources.
 
 ---
 
@@ -111,13 +106,13 @@ Two things to take from the best-studied field. The evidence base is mostly weak
 
 The learning-analytics field's own overview of its dashboards, by Katrien Verbert and colleagues in 2014, stated the promise: to "promote awareness, reflection, and sense-making, and to enable learners to define goals and track progress toward these goals." Four years later Ioana Jivet and colleagues reviewed the 26 dashboards that had actually been evaluated and found that "very few dashboard evaluations take into account the educational concepts that were used as a theoretical foundation for their design." Fourteen of the 26 were evaluated on whether people liked them. "Only one paper directly evaluated improvement in self-regulated learning although 13 papers listed supporting self-regulated learning as one of their goals." The dashboards were built to change learning and tested for satisfaction.
 
-Rogers Kaliisa and colleagues' 2024 review of 38 studies then asked whether they had changed anything. Achievement: "most studies reported negligible or small effects"; "there is no evidence to support the conclusion that LADs [learning-analytics dashboards] have lived up the promise of improving academic achievement." Participation — logins, posts, clicks — showed medium to large effects. That is the clearest demonstration in any field of a pattern that recurs through this chapter: **a dashboard moves the countable proxy before it moves the goal.** And one finding belongs beside it. Jivet's group had found earlier that "current designs foster competition between learners rather than knowledge mastery, offering misguided frames of reference for comparison" — the peer league table built in without anyone deciding to build it.
+Rogers Kaliisa and colleagues' 2024 review of 38 studies then asked whether they had changed anything. Achievement: "most studies reported negligible or small effects"; "there is no evidence to support the conclusion that LADs [learning-analytics dashboards] have lived up to the promise of improving academic achievement." Participation — logins, posts, clicks — showed medium to large effects. That finding rests on nine of the 38 studies, five with medium or large effects against four small or negligible, and the authors say the larger effects were in almost all cases confounded with another intervention or uncontrolled; read with that caveat, it is the clearest signal in any field of a pattern that recurs through this chapter: **a dashboard moves the countable proxy before it moves the goal.** And one finding belongs beside it. Jivet's group had found earlier that "current designs foster competition between learners rather than knowledge mastery, offering misguided frames of reference for comparison" — the peer league table built in without anyone deciding to build it.
 
 ### Government — necessary, not sufficient
 
 Ricardo Matheus, Marijn Janssen and Devender Maheshwari's study of two public open-data dashboards in Rio de Janeiro concluded that "dashboards can improve transparency and accountability, however, realizing these benefits was cumbersome and encountered various risks and challenges. Challenges include insufficient data quality, lack of understanding of data, poor analysis, wrong interpretation, confusion about the outcomes, and imposing a pre-defined view. These challenges can easily result in misconceptions, wrong decision-making, creating a blurred picture resulting in less transparency and accountability, and ultimately in even less trust in the government." Their remedy: "Dashboards need to be complemented by mechanisms supporting citizens' engagement, data interpretation, governance and institutional arrangements." Two qualitative cases, but the only careful ones found.
 
-Targets with teeth produce harms of their own; Gwyn Bevan and Christopher Hood's account of the English health service in the 2000s — "a system of governance of public services that combined targets with an element of terror" — catalogues the gaming that followed. Only its abstract has been read for this chapter; the typology belongs in Chapter 7 (`[Further research]`).
+Targets with teeth produce harms of their own; Gwyn Bevan and Christopher Hood's account of the English health service in the 2000s — "a system of governance of public services that combined targets with an element of terror" — catalogues the gaming that followed. Only its abstract has been read for this chapter; the typology belongs in Chapter 7.
 
 ### Business — the graveyard nobody has counted
 
@@ -163,7 +158,7 @@ The Open Data Institute adds a hierarchy worth keeping: privacy and security at 
 
 ## 6 · The arithmetic of the biggest
 
-Carly's eighth failure — "an aggregation of the biggest" — is the one that most needs to be stated as mathematics rather than as a grievance, because it is one. Nothing in this section is contested among statisticians. Most dashboards are built as if none of it were true.
+The eighth of the brief's failures, listed in section 8 — "an aggregation of the biggest" — is the one that most needs to be stated as mathematics rather than as a grievance, because it is one. Nothing in this section is contested among statisticians. Most dashboards are built as if none of it were true.
 
 ### The same numbers can say anything
 
@@ -173,7 +168,7 @@ In 1984 the geographer Stan Openshaw took one dataset — the percentage voting 
 
 In 1950 the sociologist William Robinson showed that across the nine US census divisions, the correlation between being foreign-born and being illiterate was –0.62 — divisions with more immigrants had *less* illiteracy — while at the level of individuals it was +0.12: immigrants were somewhat more likely to be illiterate, but they had settled where the native-born were more literate. His conclusion about using area correlations to stand in for individual ones: "They cannot." This is the *ecological fallacy*, and every dashboard that colours an area and lets the reader infer something about the people in it is standing on it.
 
-But the modern reading of Robinson is the one this book needs. When S. V. Subramanian and colleagues re-analysed his data in 2009, they found that the area was not noise around the individuals: states with legalised segregation had higher illiteracy among both Black and white residents, with a stronger effect on Black residents. The context had a real effect of its own. Their conclusion: "perils are posed by not only ecological fallacy but also individualistic fallacy. Multilevel thinking, grounded in historical and spatiotemporal context, is thus a necessity, not an option." (Read at the authors' abstract and a university summary; the full paper is on the verification list.) The mirror-image error — inferring that a place has no quality of its own because its people vary — has a name too: the *atomistic fallacy*. **A place-level figure can be information about the place, not just an average of the people in it.** For anything that wants to measure what a place is like rather than who lives there, that is the sentence to build on.
+But the modern reading of Robinson is the one this book needs. When S. V. Subramanian and colleagues re-analysed his data in 2009, they found that the area was not noise around the individuals: states with legalised segregation had higher illiteracy among both Black and white residents, with a stronger effect on Black residents. The context had a real effect of its own. Their conclusion: "perils are posed by not only ecological fallacy but also individualistic fallacy. Multilevel thinking, grounded in historical and spatiotemporal context, is thus a necessity, not an option." The mirror-image error — inferring that a place has no quality of its own because its people vary — has a name too: the *atomistic fallacy*. **A place-level figure can be information about the place, not just an average of the people in it.** For anything that wants to measure what a place is like rather than who lives there, that is the sentence to build on.
 
 ### A ranking can reverse when you look inside it
 
@@ -193,11 +188,11 @@ The Royal Statistical Society's own verdict on league tables, in Harvey Goldstei
 
 ### Official statistics are designed to blank the small cells
 
-The last fact bites hardest for anyone trying to see a small scene. Statistical offices suppress or disturb small counts, for two reasons given in one breath: reliability and confidentiality. The US Centers for Disease Control's cancer registry does not show "statistics based on counts below 16." The ONS's standard rule for published tables is the "10-5 rule" — suppress below ten, round to the nearest five above. The 2021 Census swapped rare records between areas and added noise to "around 14% of cell counts," so that "where there is a cell count of one in a published output, there is a high chance that it could be a swapped record, a perturbed count or an imputed record." And the technique used to fill the gaps, small-area estimation, "will tend to shrink estimates towards the average level … so estimates at each end of the scales tend to be over- or under-estimated." The design of official statistics removes, by rule, precisely the small cells where a local reader would look for the interesting case — not from malice but from method. Any dashboard built only from official sources will be blind in exactly the places Carly's brief cares about, and must say so rather than show a blank. `[Revisit at end]` This is the statistical root of a problem that Chapters 4, 6 and 10 each inherit a piece of: a disclosure threshold decides, before any screen is drawn, how many people a scene must contain before it can be seen.
+The last fact bites hardest for anyone trying to see a small scene. Statistical offices suppress or disturb small counts, for two reasons given in one breath: reliability and confidentiality. The US Centers for Disease Control's cancer registry does not show "statistics based on counts below 16." The ONS's standard rule for published tables is the "10-5 rule" — suppress below ten, round to the nearest five above. The 2021 Census swapped rare records between areas and added noise to "around 14% of cell counts," so that "where there is a cell count of one in a published output, there is a high chance that it could be a swapped record, a perturbed count or an imputed record." And the technique used to fill the gaps, small-area estimation, "will tend to shrink estimates towards the average level … so estimates at each end of the scales tend to be over- or under-estimated." The design of official statistics removes, by rule, precisely the small cells where a local reader would look for the interesting case — not from malice but from method. Any dashboard built only from official sources will be blind in exactly the places Carly's brief cares about, and must say so rather than show a blank. This is the statistical root of a problem that Chapters 4, 6 and 10 each inherit a piece of: a disclosure threshold decides, before any screen is drawn, how many people a scene must contain before it can be seen.
 
 ### Why an outlier can be the point
 
-Put the facts together and the outlier changes character. The textbook definition — an observation "which deviates so much from other observations as to arouse suspicions that it was generated by a different mechanism" — is, read carefully, an invitation: *a different mechanism* is a different story, and a story is what a reader came for. John Tukey's founding attitude for exploratory data analysis was that "the greatest value of a picture is when it forces us to notice what we never expected to see." The discipline of anomaly detection exists because "anomalies in data translate to significant (and often critical) actionable information" — in fraud, in intrusion, in machine failure. And there is a method that makes the favourable outlier its object of study: *positive deviance*, which "enables communities to discover the wisdom they already have, and then to act on it." In its founding case, in Vietnamese villages in 1990, the families whose children were well-nourished on the same resources as everyone else turned out to be adding sweet-potato greens and paddy crabs to meals, feeding children "three to four times a day, rather than the customary two," and washing hands first; the practitioners report that malnutrition fell by 85% in the pilot villages — their own figure, uncontrolled, and to be quoted as such. The analytical move is the one Carly describes in words: the small venue that holds a scene together is not noise in the distribution of venues; it is a different mechanism, and the question is what it is doing right. `[Prototype flag]` A positive-deviance analysis on the Vibe Map's own data is one of the clearest early experiments available.
+Put the facts together and the outlier changes character. The textbook definition — an observation "which deviates so much from other observations as to arouse suspicions that it was generated by a different mechanism" — is, read carefully, an invitation: *a different mechanism* is a different story, and a story is what a reader came for. John Tukey's founding attitude for exploratory data analysis was that "the greatest value of a picture is when it forces us to notice what we never expected to see." The discipline of anomaly detection exists because "anomalies in data translate to significant (and often critical) actionable information" — in fraud, in intrusion, in machine failure. And there is a method that makes the favourable outlier its object of study: *positive deviance*, which "enables communities to discover the wisdom they already have, and then to act on it." In its founding case, in Vietnamese villages in 1990, the families whose children were well-nourished on the same resources as everyone else turned out to be adding sweet-potato greens and paddy crabs to meals, feeding children "three to four times a day, rather than the customary two," and washing hands first; the practitioners report that malnutrition fell by 85% in the pilot villages — their own figure, uncontrolled, and to be quoted as such. The analytical move is the one Carly describes in words: the small venue that holds a scene together is not noise in the distribution of venues; it is a different mechanism, and the question is what it is doing right. A positive-deviance analysis on the Vibe Map's own data is one of the clearest early experiments available.
 
 ---
 
@@ -219,7 +214,7 @@ The culture sector has been through this argument already and left a record. The
 
 One more concept, and it is the most constructive in the chapter. In 1989 Susan Leigh Star and James Griesemer studied how amateurs and professionals managed to work together on a natural-history museum without agreeing about what they were doing, and named the things that made it possible *boundary objects*: "objects which are both plastic enough to adapt to local needs and the constraints of the several parties employing them, yet robust enough to maintain a common identity across sites. They are weakly structured in common use, and become strongly structured in individual-site use. … They have different meanings in different social worlds but their structure is common enough to more than one world to make them recognizable, a means of translation." One of their four types is the *ideal type*: "an object such as a diagram, atlas or other description which in fact does not accurately describe the details of any one locality or thing. It is abstracted from all domains, and may be fairly vague. However, it is adaptable to a local site precisely because it is fairly vague." Vagueness, in this theory, is a feature — which runs directly against the dashboard ideal of precision, and is worth sitting with.
 
-A dashboard that must serve a council officer, a promoter, a funder and a scene at once is attempting to be a boundary object, and the theory says two things about that. First, it does not require everyone to agree what the numbers mean; it requires a structure each can read in their own way — which is why Chapter 12's insistence that a scene recognises its place is not sentiment but a condition of the object working. Second, from Esther Turnhout's 2009 study of ecological indicators: the property is not designed in. Their effectiveness as boundary objects, "rather than a characteristic of the indicator itself, … is a social achievement, which depends on a common culture of shared values and preferences." The shared display is downstream of the shared community. You cannot build the common ground with the dashboard; you build the dashboard on common ground that already exists — the strongest argument in this book for the project's insistence on convening and co-design before screens. `[Validate with users]`
+A dashboard that must serve a council officer, a promoter, a funder and a scene at once is attempting to be a boundary object, and the theory says two things about that. First, it does not require everyone to agree what the numbers mean; it requires a structure each can read in their own way — which is why Chapter 12's insistence that a scene recognises its place is not sentiment but a condition of the object working. Second, from Esther Turnhout's 2009 study of ecological indicators: the property is not designed in. Their effectiveness as boundary objects, "rather than a characteristic of the indicator itself, … is a social achievement, which depends on a common culture of shared values and preferences." The shared display is downstream of the shared community. You cannot build the common ground with the dashboard; you build the dashboard on common ground that already exists — the strongest argument in this book for the project's insistence on convening and co-design before screens.
 
 ---
 
@@ -229,11 +224,11 @@ Carly's eight failures, each with the mechanism the research names, the strength
 
 | The failure | What is happening | What the evidence says | Remedy family (and where) |
 |---|---|---|---|
-| **It looks the same every month** | A monitoring display with nothing to monitor; no change signal; attention decays with novelty | Few's definition makes monitoring the purpose; Endsley's model says awareness needs change to perceive; the non-use literature says unchanging displays stop being opened. No direct study of staleness found — `[Further research]` | Design for change: show what moved; the heartbeat; the dashboard's own age; link trends to decisions (Ch 8) |
+| **It looks the same every month** | A monitoring display with nothing to monitor; no change signal; attention decays with novelty | Few's definition makes monitoring the purpose; Endsley's model says awareness needs change to perceive; the non-use literature says unchanging displays stop being opened. No direct study of staleness found | Design for change: show what moved; the heartbeat; the dashboard's own age; link trends to decisions (Ch 8) |
 | **A fancy spreadsheet of big numbers** | Perception without comprehension; vanity measures; the cockpit applied without the pilot's model | Endsley's higher levels; Few's "say too little"; the 2020 panel's "manage the type, volume and flow" | Purpose before pixels; a sentence per screen; measures chosen for the decision, not the data (Ch 3, Ch 11) |
 | **"What am I looking at?"** | No named reader; no stated question; data inertia showing what existed rather than what was asked | Ivanković: "know their audience" is feature one; Barbazza: teams never met the public; Jivet: evaluated for satisfaction, not purpose | Name the reader and the decision first; test with the reader (Ch 2, Ch 11) |
 | **People do not recognise their place** | Commensuration flattened the difference; the unit of aggregation hid the scene; the deficit model displaced the asset model | Openshaw (unit changes the answer); the O'Connell case; Star & Griesemer (recognition is the condition of a boundary object) | Scene-scale units; identity never ranked; counterdata and co-production; a recognition test with the scene (Ch 4, Ch 9, Ch 12) |
-| **Nobody uses it** | Built without the users; opt-in access; no routine; no measurement of use | Dowding (opt-in dashboards go unused; ambient ones get used); Rossi (28% opened once — one study); Behn (the meeting is the intervention) | Design the use before the display; make it part of a routine; measure use from day one `[Prototype flag]` (Ch 2, Ch 8, Ch 11) |
+| **Nobody uses it** | Built without the users; opt-in access; no routine; no measurement of use | Dowding (opt-in dashboards go unused; ambient ones get used); Rossi (28% opened once — one study); Behn (the meeting is the intervention) | Design the use before the display; make it part of a routine; measure use from day one (Ch 2, Ch 8, Ch 11) |
 | **It breaks or is not reliable** | Data quality; feed failure; a live container with stale contents | Matheus (poor data quality erodes trust); Dong (anomaly detection as the heart of curation); the Code's Quality pillar | Provenance and freshness on the face; anomaly checks; the six kinds of nothing; honest empty states (Ch 4, Ch 8) |
 | **Nobody trusts it** | Trust sought from the display rather than earned by conduct; transparency mistaken for checkability; uncertainty hidden | The Code (trustworthiness is conduct); O'Neill (checkability); the confidence surveys; van der Bles (show numeric uncertainty); the UK dashboard (fixed time, open data, simultaneous release) | Trustworthiness, quality, value as operating rules; data release beside display; numeric uncertainty; a route back to the makers (Ch 5, Ch 8, Ch 10) |
 | **An aggregation of the biggest** | Unscaled sums; size-dependent indicators; small-number volatility; suppression of small cells; one good score hiding a bad one | Openshaw; Wainer; Gelman & Price; Goldstein & Spiegelhalter; the OECD/JRC handbook's own concessions; ONS and CDC suppression rules | Scale by size and say so; show uncertainty, not points; rankings as screens, not verdicts; outliers as mechanism; positive deviance (Ch 4–7) |
@@ -244,22 +239,22 @@ Carly's eight failures, each with the mechanism the research names, the strength
 
 The candidate canonical truths this chapter contributes, each with its kind and firmness. Later chapters test them; the closing chapter confirms or demotes them.
 
-1. **A dashboard is an argument, not a window.** It translates; it does not mirror; through reactivity it reshapes what it shows. *Reading of strong scholarship (Kitchin; Espeland & Stevens; Scott). Fixed as a stance; the design consequence — document provenance, positionality and uncertainty on the face — is Fixed.*
-2. **Purpose and reader come before pixels.** A display built for nobody serves nobody. *Evidence (Ivanković; Jivet; Barbazza). Fixed.*
-3. **The evidence that dashboards work is thin, and depends on use and context.** *Evidence (four systematic reviews across sectors; one meta-analysis). Fixed as a statement of the record.*
-4. **Non-use is the dominant failure mode.** Use must be designed and measured. *Evidence (Dowding; Rossi; Behn). Fixed.*
-5. **The countable proxy moves before the goal.** *Evidence (Jivet; Kaliisa; Gerrish) and the reactivity literature. Fixed.*
-6. **A published measure changes the behaviour it measures.** *Evidence and reading (Strathern; Campbell; Goldstein & Spiegelhalter). Fixed.*
-7. **Trust attaches to the producer and its conduct, not to the chart.** Transparency without checkability does not produce trust. *Standard (the Code) and evidence (the confidence surveys; O'Neill). Fixed.*
-8. **Shown as a number, uncertainty does not cost trust.** Vague hedging does. *Evidence (van der Bles; preregistered and replicated). Fixed.*
-9. **The unit of aggregation is a decision that changes the answer.** *Evidence (Openshaw; Lee et al.). Fixed.*
-10. **A place-level figure can be information about the place, not just an average of its people.** Both the ecological and the atomistic fallacy are real. *Evidence (Robinson; Subramanian et al.). Fixed.*
-11. **Small numbers sit at both ends of every ranking, and no smoothing makes a rate ranking honest.** Show uncertainty; treat rankings as screens. *Evidence (Wainer; Gelman & Price; Goldstein & Spiegelhalter). Fixed.*
-12. **Official statistics blank out small cells by design.** A dashboard built on them is blind where small scenes live, and must say so. *Standard (ONS, CDC practice). Fixed.*
+1. **A dashboard is an argument, not a window.** It translates; it does not mirror; through reactivity it reshapes what it shows. *Reading of strong scholarship (Kitchin; Espeland & Stevens; Scott). Fixed (requirement) in its design consequence — document provenance, positionality and uncertainty on the face.*
+2. **Purpose and reader come before pixels.** A display built for nobody serves nobody. *Evidence (Ivanković; Jivet; Barbazza). Fixed (sequence).*
+3. **The evidence that dashboards work is thin, and depends on use and context.** *Evidence (four systematic reviews across sectors; one meta-analysis). Fixed (statement of the record).*
+4. **Non-use is the dominant failure mode.** Use must be designed and measured. *Evidence (Dowding; Rossi; Behn). Fixed (requirement).*
+5. **The countable proxy moves before the goal.** *Evidence (Jivet; Kaliisa; Gerrish) and the reactivity literature. Fixed (sequence).*
+6. **A published measure changes the behaviour it measures.** *Evidence and reading (Strathern; Campbell; Goldstein & Spiegelhalter). Fixed (sequence).*
+7. **Trust attaches to the producer and its conduct, not to the chart.** Transparency without checkability does not produce trust. *Standard (the Code) and evidence (the confidence surveys; O'Neill). Fixed (requirement).*
+8. **Shown as a number, uncertainty does not cost trust.** Vague hedging does. *Evidence (van der Bles; preregistered and replicated). Fixed (requirement).*
+9. **The unit of aggregation is a decision that changes the answer.** *Evidence (Openshaw; Lee et al.). Fixed (requirement).*
+10. **A place-level figure can be information about the place, not just an average of its people.** Both the ecological and the atomistic fallacy are real. *Evidence (Robinson; Subramanian et al.). Fixed (statement of the record).*
+11. **Small numbers sit at both ends of every ranking, and no smoothing makes a rate ranking honest.** Show uncertainty; treat rankings as screens. *Evidence (Wainer; Gelman & Price; Goldstein & Spiegelhalter). Fixed (requirement).*
+12. **Official statistics blank out small cells by design.** A dashboard built on them is blind where small scenes live, and must say so. *Standard (ONS, CDC practice). Fixed (requirement).*
 13. **What gets counted counts; what exists as data gets measured.** *Reading (Seager via D'Ignazio & Klein; Merry). Fixed as a design risk to be worked against.*
 14. **An outlier is a candidate mechanism, not an error.** *Reading (Hawkins; Tukey; positive deviance). Adaptable: a default stance, applied with judgement.*
-15. **A display that serves several communities does so as a boundary object — by shared structure, not shared meaning — and that property is a social achievement, not a design feature.** *Reading (Star & Griesemer; Turnhout). Adaptable in application; Fixed as a reason co-design precedes screens.*
-16. **A dashboard that is not also a data release is a wall.** *Evidence (Dong et al.) and standard (the regulator on the UK interface). Fixed for any public-interest dashboard.*
+15. **A display that serves several communities does so as a boundary object — by shared structure, not shared meaning — and that property is a social achievement, not a design feature.** *Reading (Star & Griesemer; Turnhout). Adaptable in application; Fixed (sequence) as the reason co-design precedes screens.*
+16. **A dashboard that is not also a data release is a wall.** *Evidence (Dong et al.) and standard (the regulator on the UK interface). Fixed (requirement) for any public-interest dashboard.*
 
 ---
 
@@ -297,27 +292,27 @@ Three warnings travel with the illustration. The paradox of exposure: a scene th
 
 ## The rules
 
-*Kind and tier as in Chapter 0. † marks a source read at the authors' abstract only; the full text is on the verification list before this version closes (`[Further research]`).*
+*Kind and tier as in Chapter 0.*
 
 | Rule | Why | Kind | Tier | Source |
 |---|---|---|---|---|
-| Name the reader and the decision before any display is designed | A display for nobody serves nobody; the first feature of an actionable dashboard | Evidence | **Fixed** | Ivanković et al. 2021†; Jivet et al. 2018 |
-| State the dashboard's job — monitor, analyse or communicate — in writing, and design for it | The three jobs need different displays; most are used to communicate | Reading | **Fixed** | Few 2007; Eckerson 2011; Velcu-Laitinen & Yigitbasioglu 2012 |
-| Document provenance, method, positionality and uncertainty on the face of the display | A dashboard is a translator; its readers must be able to check it | Reading + Standard | **Fixed** | Kitchin et al. 2015; O'Neill 2002; Code of Practice |
-| Release the data with the display, through a documented route | A dashboard without a data release is a wall downstream | Evidence + Standard | **Fixed** | Dong et al. 2022; OSR 2021 |
-| Show uncertainty as a numeric range, never as a vague hedge or a hidden point | Numeric uncertainty costs almost no trust; verbal hedging does | Evidence | **Fixed** | van der Bles et al. 2020† |
-| Design and measure use from the first day | Non-use is the dominant failure mode and is almost never measured | Evidence | **Fixed** | Dowding et al. 2015; Rossi et al. 2025 |
-| Watch for the proxy moving without the goal; measure the goal where it can be measured | Dashboards move the countable before the intended | Evidence | **Fixed** | Jivet et al. 2018; Kaliisa et al. 2024†; Gerrish 2016† |
-| Treat every published measure as reactive; audit for gaming | A measure that becomes a target ceases to be a good measure | Evidence + Reading | **Fixed** | Strathern 1997; Campbell 1979; Goldstein & Spiegelhalter 1996 |
-| Show and justify the unit of aggregation; test sensitivity to it | The same numbers regrouped can give any answer | Evidence | **Fixed** | Openshaw 1984; Lee et al. 2025 |
-| Scale size-dependent measures by an appropriate denominator, and say which | Unscaled sums are won by the big | Standard | **Fixed** | OECD/JRC 2008 |
-| Rankings by rate are screening instruments, never verdicts; show intervals | Two-thirds of comparisons in a typical league table cannot be separated; small units sit at both ends | Evidence | **Fixed** | Goldstein & Spiegelhalter 1996; Wainer 2007; Gelman & Price 1999 |
-| Where official statistics suppress or perturb, show that fact, never a blank | Suppression removes exactly the small cells a local reader needs | Standard | **Fixed** | ONS; CDC |
-| Investigate an outlier as a mechanism before treating it as noise; use positive deviance as a method | A favourable outlier is the object of study, not the thing to trim | Reading | Adaptable | Hawkins 1980; Tukey 1977; Pascale & Sternin 2005 |
-| Treat trust as earned by conduct — trustworthiness, quality, value — not sought from the display | Trust attaches to the producer and detaches from the presenter | Standard + Evidence | **Fixed** (adopted voluntarily) | Code of Practice; Public Confidence in Official Statistics 2023 |
-| Build the common ground before the screen; test recognition with each community | A boundary object is a social achievement, not a design feature | Reading | Adaptable in method; Fixed as sequence | Star & Griesemer 1989; Turnhout 2009† |
-| Where the measure is of a place, think multilevel: the place is information, not only an average | Both the ecological and the atomistic fallacy are real | Evidence | **Fixed** | Robinson 1950; Subramanian et al. 2009† |
-| Never print an unsourced adoption or failure percentage for dashboards | None exists that is independent | Reading | **Fixed** | This chapter's search |
+| Name the reader and the decision before any display is designed | A display for nobody serves nobody; the first feature of an actionable dashboard | Evidence | **Fixed** (sequence) | Ivanković et al. 2021; Jivet et al. 2018 |
+| State the dashboard's job — monitor, analyse or communicate — in writing, and design for it | The three jobs need different displays; most are used to communicate | Reading | **Fixed** (requirement) | Few 2007; Eckerson 2011; Velcu-Laitinen & Yigitbasioglu 2012 |
+| Document provenance, method, positionality and uncertainty on the face of the display | A dashboard is a translator; its readers must be able to check it | Reading + Standard | **Fixed** (requirement) | Kitchin et al. 2015; O'Neill 2002; Code of Practice |
+| Release the data with the display, through a documented route | A dashboard without a data release is a wall downstream | Evidence + Standard | **Fixed** (requirement) | Dong et al. 2022; OSR 2021 |
+| Show uncertainty as a numeric range, never as a vague hedge or a hidden point | Numeric uncertainty costs almost no trust; verbal hedging does | Evidence | **Fixed** (requirement) | van der Bles et al. 2020 |
+| Design and measure use from the first day | Non-use is the dominant failure mode and is almost never measured | Evidence | **Fixed** (requirement) | Dowding et al. 2015; Rossi et al. 2025 |
+| Watch for the proxy moving without the goal; measure the goal where it can be measured | Dashboards move the countable before the intended; in the learning-analytics review the finding rests on nine of 38 studies, the larger effects mostly confounded | Evidence | **Fixed** (sequence) | Jivet et al. 2018; Kaliisa et al. 2024†; Gerrish 2016† |
+| Treat every published measure as reactive; audit for gaming | A measure that becomes a target ceases to be a good measure | Evidence + Reading | **Fixed** (sequence) | Strathern 1997; Campbell 1979; Goldstein & Spiegelhalter 1996 |
+| Show and justify the unit of aggregation; test sensitivity to it | The same numbers regrouped can give any answer | Evidence | **Fixed** (requirement) | Openshaw 1984; Lee et al. 2025 |
+| Scale size-dependent measures by an appropriate denominator, and say which | Unscaled sums are won by the big | Standard | **Fixed** (requirement) | OECD/JRC 2008 |
+| Rankings by rate are screening instruments, never verdicts; show intervals | Two-thirds of comparisons in a typical league table cannot be separated; small units sit at both ends | Evidence | **Fixed** (requirement) | Goldstein & Spiegelhalter 1996; Wainer 2007; Gelman & Price 1999 |
+| Where official statistics suppress or perturb, show that fact, never a blank | Suppression removes exactly the small cells a local reader needs | Standard | **Fixed** (requirement) | ONS; CDC |
+| Investigate an outlier as a mechanism before treating it as noise; use positive deviance as a method | A favourable outlier is the object of study, not the thing to trim | Reading | **Fixed** (sequence) | Hawkins 1980; Tukey 1977; Pascale & Sternin 2005 |
+| Treat trust as earned by conduct — trustworthiness, quality, value — not sought from the display | Trust attaches to the producer and detaches from the presenter | Standard + Evidence | **Fixed** (requirement) | Code of Practice; Public Confidence in Official Statistics 2023 |
+| Build the common ground before the screen; test recognition with each community | A boundary object is a social achievement, not a design feature | Reading | **Fixed** (sequence); the method of checking is Adaptable | Star & Griesemer 1989; Turnhout 2009† |
+| Where the measure is of a place, think multilevel: the place is information, not only an average | Both the ecological and the atomistic fallacy are real | Evidence | **Fixed** (statement of the record) | Robinson 1950; Subramanian et al. 2009† |
+| Never print an unsourced adoption or failure percentage for dashboards | None exists that is independent | Reading | **Fixed** (requirement) | This chapter's search |
 | The job, the layering, the degree of framing, the order of failures to prevent, the amount of mud | Open choices with named trade-offs | — | Adaptable | Section 10 |
 | Register, imagery, metaphor | Free, within the design system | — | *Decorative* | — |
 
@@ -325,7 +320,12 @@ Three warnings travel with the illustration. The paradox of exposure: a scene th
 
 ## What proves a break works
 
-If you must build a dashboard that breaks one of the Fixed rules above — a ranking without intervals, a display without a data release, a measure that is not scaled — the test is the same in every case: **find the person the rule protects and show them.** Give the ranking to someone at the bottom of it and ask if it is fair. Give the display to someone who needs the data underneath and ask them to get it. Give the unscaled measure to the smallest unit in it and ask whether they can see themselves. If the break survives that, log it in the four-line record Chapter 16 describes. If it does not, it was not a break; it was a mistake.
+If you must build a dashboard that breaks one of the Fixed rules above — a ranking without intervals, a display without a data release, a measure that is not scaled — the test is the same in every case: **find the person the rule protects and show them.** Give the ranking to someone at the bottom of it and ask if it is fair. Give the display to someone who needs the data underneath and ask them to get it. Give the unscaled measure to the smallest unit in it and ask whether they can see themselves. If the break survives that, log it in the deviation entry Chapter 16 describes. If it does not, it was not a break; it was a mistake.
+
+## What this chapter could not settle
+
+- No independent measurement exists of how many dashboards go unused. Interim position: refuse to print a percentage; state the gap as a rule.
+- No study found on staleness, what happens when a dashboard stops changing. Interim position: inferred from monitoring theory and the non-use literature.
 
 ## Checklist
 
@@ -346,33 +346,9 @@ If you must build a dashboard that breaks one of the Fixed rules above — a ran
 
 ---
 
-## Open questions and flags
-
-- `[Further research]` **Staleness.** No study found on what happens to a dashboard's use when it stops changing. Chapter 8 should look again.
-- `[Further research]` **Gaming typologies.** Bevan & Hood's full typology (ratchet, threshold, output distortion) was not read at source; it belongs in Chapter 7 or 10.
-- `[Further research]` **Dashboards as boundary objects.** A 2026 paper in *Government Information Quarterly* is directly on point and could not be read; Star's own 2010 caveat on the concept likewise.
-- `[Further research]` **Abstract-only sources behind Fixed rules** (marked † above): Gerrish, van der Bles, Ivanković, Kaliisa, Turnhout, Subramanian. Each is the authors' own summary of their finding and is quoted accurately, but the full texts should be read before the version closes.
-- `[Further research]` **Porter's "mechanical objectivity".** Quoted from an excerpt collection; the book should be read for Chapter 5.
-- `[Prototype flag]` **Measure use.** The Vibe Map can do from day one what almost no dashboard in the literature did: record who opens it, what they touch and what they take away.
-- `[Prototype flag]` **Positive deviance on the project's own data.** Find the small places doing well on the same resources and ask what they do.
-- `[Validate with users]` **The project's four discovery tests** — can something universally useful be co-designed; does it paint a recognisable picture; does it steer decisions and collective action; can it travel and stay useful — are, in this chapter's terms, tests of whether a boundary object is forming. Ask each of the three user groups whether they recognise the same structure and read it their own way.
-- `[Revisit at end]` **The suppression threshold.** Its statistical root is here; its collection, display and ethical consequences are in Chapters 4, 6 and 10. Close the loop at the end.
-- `[Revisit at end]` **Is "dashboard" the right word for the whole book?** This chapter reclaims it; Chapter 16 should ask whether the reclaimed word survived fifteen chapters of use.
-- `[Rich reference]` Mattern, *Mission Control* (2015) — forty minutes, free, and the whole argument about mud. Kitchin, Lauriault & McArdle (2015) — the critical canon in one open-access paper, with a conclusion you can use as a design brief. Wainer, *The Most Dangerous Equation* (2007) — eight pages, one square root, four disasters. Jivet et al., *License to Evaluate* (2018) — the clearest proof that dashboards get tested for the wrong thing. O'Neill, Reith Lecture 4, *Trust and Transparency* (2002) — why more transparency can mean less trust.
-
-## Looking back
-
-This is the first chapter of version 2, so the backward look is at the archived version 1 (fourteen chapters, August 2026). Three things move.
-
-- **Strengthens** version 1's rules that the first screen is an endorsement and that freshness belongs on it: the Code's trustworthiness pillar and the UK dashboard's fixed release time give those rules an institutional basis they lacked.
-- **Counterbalances** version 1's Chapter 5, which proposed that a place's *identity* is never ranked while its *conditions* (space, support, licensing climate) may be compared through a comparability gate. This chapter's statistics say that even a comparison of conditions by rate is a screening instrument, not a verdict — the gate needs intervals, not only a comparability note. `[Counterbalance → old Ch 5 / new Ch 7]`
-- **Opens a thread** for version 1's discovery chapter, whose rule was that a scene consents to being findable: the paradox of exposure and counterdata give that rule a theoretical foundation and raise the harder question — who speaks for a scene — that version 1 left open.
-
----
-
 ## Sources
 
-*Grouped by section. Each entry says the kind of source and how it was read. "At source" means a person or agent opened that link on 5 October 2026 and the quotation was taken from it; "spot-checked" means the orchestrator re-opened it; "verified" means an independent agent re-traced it on 6 October. "Abstract" means the authors' published summary only; such sources are marked † in the rules table.*
+*Grouped by section. Each entry says the kind of source and how it was read: "at source" means the link was opened on 5 October 2026 and the quotation taken from it, "spot-checked" and "verified" that it was re-opened and re-traced on 6 October, and "abstract" that only the authors' published summary was read, in which case the source is marked † in the rules table; Kaplan & Norton's cockpit passage and Porter's* Trust in Numbers *could not be read in the original and are quoted from secondary reproductions.*
 
 **The field's own definitions and history**
 - Few, S. (2004). *Dashboard Confusion*. Intelligent Enterprise. https://www.perceptualedge.com/articles/ie/dashboard_confusion.pdf — practitioner; at source; spot-checked.
@@ -380,23 +356,23 @@ This is the first chapter of version 2, so the backward look is at the archived 
 - Few, S. (2007). *Dashboard Confusion Revisited*; *Why Most Dashboards Fail*; (2010) blog on assessing dashboard effectiveness — practitioner; at source via perceptualedge.com.
 - Sarikaya, A., Correll, M., Bartram, L., Tory, M. & Fisher, D. (2019). What Do We Talk About When We Talk About Dashboards? *IEEE Transactions on Visualization and Computer Graphics* 25(1), 682–692. Preprint: https://alper.datav.is/assets/publications/dashboards/dashboards-preprint.pdf — Evidence (corpus study, 83 dashboards); at source; verified.
 - Bach, B., Freeman, E., Abdul-Rahman, A., Turkay, C., Khan, S., Fan, Y. & Chen, M. (2023). Dashboard Design Patterns. *IEEE TVCG* 29(1), 342–352. Open copy: https://wrap.warwick.ac.uk/id/eprint/170047/ — Evidence (144 dashboards; 23-person workshop); at source; verified.
-- Purich, M. et al. (2023). Toward a Scalable Census of Dashboard Designs in the Wild. arXiv:2306.16513 — Evidence (25,620 dashboards; preprint); full text read by a research agent; the three statistics quoted rest on the full text.
+- Purich, M. et al. (2023). Toward a Scalable Census of Dashboard Designs in the Wild. arXiv:2306.16513 — Evidence (25,620 dashboards; preprint); full text; the three statistics quoted rest on the full text.
 - Eckerson, W. (2011). *Performance Dashboards*, 2nd ed. Wiley — practitioner; chapter 1 at source via publisher sample.
 - Velcu-Laitinen, O. & Yigitbasioglu, O. (2012). The Use of Dashboards in Performance Management: Evidence from Sales Managers. *International Journal of Digital Accounting Research* 12, 39–58. https://www.uhu.es/ijdar/10.4192/1577-8517-v12_2.pdf — Evidence (survey, 36 users); at source; verified.
 - Yigitbasioglu, O. & Velcu, O. (2012). A review of dashboards in performance management. *International Journal of Accounting Information Systems* 13(1), 41–59 — Evidence (review); abstract.
 - Kaplan, R. & Norton, D. (1992). The Balanced Scorecard — Measures That Drive Performance. *Harvard Business Review* 70(1) — practitioner; cockpit passage via secondary reproduction, **not checked against HBR**.
 - Watson, H., Rainer, R. & Koh, C. (1991). Executive Information Systems. *MIS Quarterly* 15(1), 13–30 — Evidence (survey of 50 firms); at source.
-- Mattern, S. (2015). Mission Control: A History of the Urban Dashboard. *Places Journal*. https://placesjournal.org/article/mission-control-a-history-of-the-urban-dashboard/ — Reading (cultural history); at source; verified. `[Rich reference]`
+- Mattern, S. (2015). Mission Control: A History of the Urban Dashboard. *Places Journal*. https://placesjournal.org/article/mission-control-a-history-of-the-urban-dashboard/ — Reading (cultural history); at source; verified.
 - Endsley, M. (1995). Toward a Theory of Situation Awareness in Dynamic Systems. *Human Factors* 37(1), 32–64 — Evidence (theory); abstract at source; definition via Endsley (2015).
 
 **Does it work**
-- Dowding, D. et al. (2015). Dashboards for improving patient care: review of the literature. *International Journal of Medical Informatics* 84(2), 87–100. Author manuscript, White Rose repository — Evidence (systematic review, 11 studies); at source. `[Rich reference]`
+- Dowding, D. et al. (2015). Dashboards for improving patient care: review of the literature. *International Journal of Medical Informatics* 84(2), 87–100. Author manuscript, White Rose repository — Evidence (systematic review, 11 studies); at source.
 - Khairat, S. et al. (2018). The Impact of Visualization Dashboards on Quality of Care and Clinician Satisfaction. *JMIR Human Factors* 5(2):e22 — Evidence (integrative review); PMC full text.
 - Coiera, E. et al. (2025). Clinical and economic impact of digital dashboards on hospital inpatient care: a systematic review. *JAMIA Open* 8(4):ooaf078 — Evidence (70 studies, risk-of-bias graded); PMC full text; verified.
 - Rossi, F. et al. (2025). From glitter to gold: recommendations for effective dashboards. *Implementation Science* 20:16 — Reading (position paper); at source.
 - Verbert, K. et al. (2014). Learning dashboards: an overview and future research opportunities. *Personal and Ubiquitous Computing* 18, 1499–1514 — abstract; verified.
 - Jivet, I., Scheffel, M., Drachsler, H. & Specht, M. (2017). Awareness Is Not Enough. EC-TEL 2017 — abstract.
-- Jivet, I., Scheffel, M., Specht, M. & Drachsler, H. (2018). License to evaluate: preparing learning analytics dashboards for educational practice. LAK '18. Preprint: https://research.ou.nl/files/8215481/LAK_2018_Jivet_preprint.pdf — Evidence (26 dashboards); at source; verified. `[Rich reference]`
+- Jivet, I., Scheffel, M., Specht, M. & Drachsler, H. (2018). License to evaluate: preparing learning analytics dashboards for educational practice. LAK '18. Preprint: https://research.ou.nl/files/8215481/LAK_2018_Jivet_preprint.pdf — Evidence (26 dashboards); at source; verified.
 - Kaliisa, R. et al. (2024). Have Learning Analytics Dashboards Lived Up to the Hype? LAK '24 — Evidence (38 studies); author summary †.
 - Matheus, R., Janssen, M. & Maheshwari, D. (2020). Data science empowering the public. *Government Information Quarterly* 37(3) — Evidence (two cases); abstract †.
 - Behn, R. (2007). *What All Mayors Would Like to Know About Baltimore's CitiStat*; (2008). *The Seven Big Errors of PerformanceStat* — practitioner; at source.
@@ -408,27 +384,27 @@ This is the first chapter of version 2, so the backward look is at the archived 
 
 **2020 and trust**
 - Dong, E. et al. (2022). The Johns Hopkins University CSSE COVID-19 Dashboard: data collection process, challenges faced, and lessons learned. *Lancet Infectious Diseases* 22(12), e370–e376 — Evidence (builders' account); full text; verified.
-- Ivanković, D. et al. (2021). Features Constituting Actionable COVID-19 Dashboards. *JMIR* 23(2):e25682 — Evidence (158 dashboards, expert appraisal); abstract †; spot-checked.
+- Ivanković, D. et al. (2021). Features Constituting Actionable COVID-19 Dashboards. *JMIR* 23(2):e25682 — Evidence (158 dashboards, expert appraisal); abstract; spot-checked; full text read for a later chapter.
 - Flowers, J. (2020, 2021) and Griffiths, C. (2022). UKHSA blogs on the coronavirus dashboard — the team's own account; at source; spot-checked.
 - Office for Statistics Regulation (2021). *State of the UK's Statistical System 2020–21*; OSR/RSS award (2022) — standard-setter; at source.
 - UK Statistics Authority. *Code of Practice for Statistics*, editions 2.0 (2018) and 3.0 (2025) — Standard; at source.
-- O'Neill, O. (2002). *A Question of Trust*, Reith Lectures 3 and 4 — Reading (philosophy); BBC transcripts at source. `[Rich reference]`
+- O'Neill, O. (2002). *A Question of Trust*, Reith Lectures 3 and 4 — Reading (philosophy); BBC transcripts at source.
 - OSR blog (28 June 2021); Spiegelhalter, D., OSR blog (20 March 2026) — at source.
 - Tennison, J. (2020). Building trust in how you handle data: a hierarchy. Open Data Institute — at source.
-- van der Bles, A. M., van der Linden, S., Freeman, A. & Spiegelhalter, D. (2020). The effects of communicating uncertainty on public trust in facts and numbers. *PNAS* 117(14), 7672–7683 — Evidence (five experiments, n = 5,780, preregistered); abstract †; verified via the Cambridge repository.
+- van der Bles, A. M., van der Linden, S., Freeman, A. & Spiegelhalter, D. (2020). The effects of communicating uncertainty on public trust in facts and numbers. *PNAS* 117(14), 7672–7683 — Evidence (five experiments, n = 5,780, preregistered); abstract; verified via the Cambridge repository; full text read for a later chapter.
 - National Centre for Social Research for the UK Statistics Authority (2024). *Public Confidence in Official Statistics 2023*; and the 2014 wave (2015) — Evidence (national surveys); at source; verified.
 
 **The arithmetic of aggregation**
-- Openshaw, S. (1984). *The Modifiable Areal Unit Problem*. CATMOG 38. Norwich: Geo Books. https://www.uio.no/studier/emner/sv/iss/SGO9010/openshaw1983.pdf — Evidence (primary); at source; verified. `[Rich reference]`
+- Openshaw, S. (1984). *The Modifiable Areal Unit Problem*. CATMOG 38. Norwich: Geo Books. https://www.uio.no/studier/emner/sv/iss/SGO9010/openshaw1983.pdf — Evidence (primary); at source; verified.
 - Lee, D., Rogers, M. & Soifer, H. (2025). The Modifiable Areal Unit Problem in Political Science. *Political Analysis* 33, 412–424 — Evidence; at source.
 - Robinson, W. S. (1950). Ecological Correlations and the Behavior of Individuals. *American Sociological Review* 15(3), 351–357 — Evidence (primary); JSTOR scan at source; verified.
 - Subramanian, S. V., Jones, K., Kaddour, A. & Krieger, N. (2009). Revisiting Robinson: the perils of individualistic and ecologic fallacy. *International Journal of Epidemiology* 38(2), 342–360 — Evidence; abstract and university summary †.
 - Simpson, E. (1951). *JRSS B* 13(2), 238–241; Julious, S. & Mullee, M. (1994). Confounding and Simpson's paradox. *BMJ* 309, 1480–1481; Bickel, P., Hammel, E. & O'Connell, J. (1975). Sex Bias in Graduate Admissions. *Science* 187, 398–404 — Evidence (primary); at source; Bickel verified. One sub-group percentage in Julious & Mullee differs between copies (83% vs 87% for 234/270; arithmetic gives 86.7%).
 - OECD/JRC (2008). *Handbook on Constructing Composite Indicators: Methodology and User Guide*. https://knowledge4policy.ec.europa.eu/sites/default/files/jrc47008_handbook_final.pdf — Standard; at source; verified.
 - CWTS Leiden Ranking, *Responsible use* principles — standard-setter practice; at source.
-- Wainer, H. (2007). The Most Dangerous Equation. *American Scientist* 95(3), 249–256 — Evidence; at source; spot-checked. `[Rich reference]`
+- Wainer, H. (2007). The Most Dangerous Equation. *American Scientist* 95(3), 249–256 — Evidence; at source; spot-checked.
 - Gelman, A. & Price, P. (1999). All maps of parameter estimates are misleading. *Statistics in Medicine* 18, 3221–3234 — Evidence; at source; verified.
-- Goldstein, H. & Spiegelhalter, D. (1996). League Tables and Their Limitations. *JRSS A* 159(3), 385–443 — Evidence; at source; verified. `[Rich reference]`
+- Goldstein, H. & Spiegelhalter, D. (1996). League Tables and Their Limitations. *JRSS A* 159(3), 385–443 — Evidence; at source; verified.
 - ONS (2023). *Protecting personal data in Census 2021 results*; ONS (2024). *Comparison of post-tabular statistical disclosure control methods*; ONS (2023). *Income estimates for small areas: technical report*; CDC. *U.S. Cancer Statistics — Suppression of Rates and Counts* — Standard; at source.
 - Jiang, J. & Rao, J. (2020). Robust Small Area Estimation: An Overview. *Annual Review of Statistics and Its Application* 7 — abstract.
 - Hawkins, D. (1980). *Identification of Outliers*. Chapman and Hall — definition via secondary.
@@ -437,7 +413,7 @@ This is the first chapter of version 2, so the backward look is at the archived 
 - Pascale, R. & Sternin, J. (2005). Your Company's Secret Change Agents. *Harvard Business Review*; Singhal, A., Sternin, J. & Durá, L. (2009). *Positive Deviance Grows Roots in Vietnam* — Reading (practitioner accounts); at source.
 
 **The critical scholarship**
-- Kitchin, R., Lauriault, T. & McArdle, G. (2015). Knowing and governing cities through urban indicators, city benchmarking and real-time dashboards. *Regional Studies, Regional Science* 2(1), 6–28. Open: Maynooth repository — Reading and evidence; at source; spot-checked. `[Rich reference]`
+- Kitchin, R., Lauriault, T. & McArdle, G. (2015). Knowing and governing cities through urban indicators, city benchmarking and real-time dashboards. *Regional Studies, Regional Science* 2(1), 6–28. Open: Maynooth repository — Reading and evidence; at source; spot-checked.
 - Kitchin, R. & McArdle, G. (2017). Urban data and city dashboards: six key issues. In *Data and the City*, Routledge — preprint at source.
 - Kitchin, R., Maalsen, S. & McArdle, G. (2016). The praxis and politics of building urban dashboards. *Geoforum* 77, 93–101 — preprint at source.
 - Porter, T. (1995). *Trust in Numbers*. Princeton — Reading; **quoted via a published excerpt compilation, not the book**.
@@ -454,27 +430,6 @@ This is the first chapter of version 2, so the backward look is at the archived 
 
 **Nightlife Culture**
 - The brief, version 2 — Carly's failure register and mission statement.
-- *Artists Make Great Places* v2.1 (September 2026) — the Vibe Map description, the three user groups and the four discovery tests used in section 11.
+- *Artists Make Great Places* v2.1 (September 2026) — the Vibe Map description, the three user groups used in section 11.
 
----
-
-## Gaps found while writing this chapter
-
-*The four-field log the Decision Book uses: what was missed, what was done instead, the cost of getting it wrong (red, amber, yellow), where a rule would belong.*
-
-| What the system missed | What I did instead | Cost | Where it belongs |
-|---|---|---|---|
-| No independent measurement exists of how many dashboards go unused | Refused to print a percentage; stated the gap as a rule | Yellow | Chapter 16's rule register |
-| No study found on staleness — what happens when a dashboard stops changing | Inferred from monitoring theory and the non-use literature; flagged | Amber | Chapter 8 |
-| The Decision Book's data chapters do not say "the unit of aggregation is a decision" | Stated it here from Openshaw; the Decision Book may want the rule | Amber — it transfers to every place-based chart | Decision Book gap register, via Carly |
-| The design system's evidence rules cover charts, not the conduct of release (fixed time, simultaneous release, open data route) | Treated the Code of Practice as an adopted standard | Yellow | Design system dashboard section, eventually |
-| Chapter 0's four kinds of claim have no clean home for practitioner sources (Few, Eckerson, Behn) | Labelled them Reading and said "practitioner" in the text | Yellow | Chapter 0 — consider a fifth kind, *Practice* |
-| Fixed rules resting on abstract-only reading were not visibly marked in the first draft | Added the † convention and a verification flag | Amber — a sceptical reader caught it | Chapter 0's legend; the ledger conventions |
-
-## Design system (Style Guide v1.5) — conflict log
-
-**Agrees.** "Strong design must never make weak evidence look stronger than it is" is this chapter's evidence section in one line. The guide's requirement that every chart carry provenance, period, geography and a comparability declaration is Kitchin's conclusion and the Code's quality pillar applied. Suppressed data marked `[c]`, never blank, is section 6's last rule.
-
-**Conflicts.** None found.
-
-**Silent on.** The conduct of release — fixed time, simultaneous release, data alongside display — which this chapter finds is where public trust was actually earned; the unit of aggregation as a declared choice; the measurement of use. All three are candidates for the design system's dashboard section when it exists.
+**Read next.** Mattern, *Mission Control* (2015) — forty minutes, free, and the whole argument about mud. Kitchin, Lauriault & McArdle (2015) — the critical canon in one open-access paper, with a conclusion you can use as a design brief. Wainer, *The Most Dangerous Equation* (2007) — eight pages, one square root, four disasters. Jivet et al., *License to Evaluate* (2018) — the clearest proof that dashboards get tested for the wrong thing. O'Neill, Reith Lecture 4, *Trust and Transparency* (2002) — why more transparency can mean less trust.

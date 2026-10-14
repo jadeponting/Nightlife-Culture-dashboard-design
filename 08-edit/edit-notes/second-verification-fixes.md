@@ -1,0 +1,48 @@
+# Second verification: fixes applied after the verifiers' reports, 14 October 2026
+
+- ch01 line 307: Tier `Adaptable` → `Fixed (sequence)` (1.13 merged into DD-030; register's tier)
+- ch01 line 308: Tier `**Fixed** (adopted voluntarily)` → `Fixed (requirement)` (1.14 under DD-033; 'adopted voluntarily' is a register field, not a tier)
+- ch01: Sources: dropped 'and the four discovery tests', which section 11 does not use
+- ch02 line 443: Tier `Adaptable (a hypothesis to test)` → `Adaptable` (2.10 merged into DD-001; the bare register word keeps the chapter's hypothesis; logged for the decision log)
+- ch03 line 437: Tier `**Fixed** as defaults` → `Fixed (requirement) · alternatives offered beside the default: Adaptable` ('Fixed as defaults' → DD-072's cell)
+- ch05: removed the sentence the writer added in place of 'For Carly.'; the choice stays open in the decision log
+- ch05 line 412: Tier `**Fixed**` → `Fixed (requirement)` (5.15 bare Fixed; register groups it under DD-037 (cognitive testing), which looks like a mis-grouping; chapter keeps requirement, register query logged)
+- ch05: sources note: Hoskin is cited through Strathern, not marked secondary
+- ch05: removed 'of ten steps', added in the move of the two-lists sentence
+- ch07: dagger gloss corrected to the chapter's own definition
+- ch09 line 517: Tier `**Fixed**` → `Fixed (requirement)` (9.12 merged into DD-011; register's tier)
+- ch09: stray closing rule removed
+- ch10: 8 double full stops after removed [Rich reference] tags
+- ch10: section 19 last choice: tier wording brought to the register's
+- ch12: 'Read next' paragraph struck; the moved section held no rich references and its prose was new
+- ch15: 'Words this chapter uses': precedent record bullet ended at the chapter's own words
+- ch16: 'the compilation' defined in the moved note's own words
+- ch16: rule 16.23: the wait on a person becomes a pointer to the decision log; register DD-373 changed to match
+- 04-chapters/ch16-breaking-these-rules-well.md: status value 'awaiting Carly' → 'open in the decision log' (2)
+- 06-register/rule-register.md: status value 'awaiting Carly' → 'open in the decision log' (7)
+- all chapters: 181 Tier cells' bold markup normalised to `**Fixed** (requirement)` form
+- 04-chapters/ch10-safety-ethics-and-consent.md: stray closing rule removed
+- 04-chapters/ch06-finding-value-in-the-data.md: stray closing rule removed
+- 04-chapters/ch12-recognising-your-place.md: stray closing rule removed
+- 04-chapters/ch15-learning-from-the-best.md: stray closing rule removed
+- 04-chapters/ch03-the-canonical-truths-of-showing-data.md: stray closing rule removed
+- 04-chapters/ch02-who-reads-it-and-what-turns-their-decision.md: stray closing rule removed
+- 04-chapters/ch05-building-a-measure.md: stray closing rule removed
+- 04-chapters/ch14-where-evidence-meets-expression.md: stray closing rule removed
+- 04-chapters/ch11-the-first-screen-and-the-path-through-it.md: stray closing rule removed
+- 04-chapters/ch16-breaking-these-rules-well.md: stray closing rule removed
+- 04-chapters/ch07-comparison-time-and-intervention.md: stray closing rule removed
+- 04-chapters/ch08-automation-without-admin.md: stray closing rule removed
+- 04-chapters/ch13-accessible-as-the-good-version.md: stray closing rule removed
+- 04-chapters/ch01-what-a-dashboard-is-for.md: stray closing rule removed
+- 04-chapters/ch04-from-data-to-evidence.md: stray closing rule removed
+
+## After the newcomer reads and the whole-book check
+- Every chapter 1 to 16: a fixed "Reading this chapter" paragraph added before "The question", identical in each, naming the studio, the brief, the failure register, the Vibe Map, version 1, the kinds and tiers (pointer to Chapter 0) and the marks (†, secondary, read once). Added because the newcomer reads stalled on these in every chapter once "Before you start" had moved out; the Data Brain's pilot had the same finding and the same remedy.
+- Every chapter: "What the field does not know" renamed "What this chapter could not settle" (the lists hold gaps of the field, the design system and the book).
+- Tool phrasing swept from the body and Sources (101 replacements; `tool-phrasing-sweep.md`).
+- ch06: "the next section leaves open" → "section 13 leaves open".
+- ch12: Form 696 glossed at first use (the Metropolitan Police's former event risk-assessment form); "Carly's frame" → "the studio's frame".
+- ch16: a framing sentence at the head of section 3 and of section 7: the counts are of the chapters at second draft, 7 October 2026; the register is the current statement.
+- ch08: the heartbeat's two senses joined in "Words this chapter uses"; ch04: the sentence that reversed Chapter 1's sense corrected.
+- Chapter 0 rewritten for the finished book (`ch00-NOTES.md`).

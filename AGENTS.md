@@ -21,7 +21,7 @@ Carly Heath is the author of the mission and the final reader. She holds the sec
 
 ## The flags
 
-Used in chapters, the log and the ledger, always in square brackets so they can be searched:
+Used in the log, the ledger and the working record, always in square brackets so they can be searched. The finished chapters no longer carry them (see below):
 
 | Flag | Means |
 |---|---|
@@ -62,27 +62,32 @@ Used in chapters, the log and the ledger, always in square brackets so they can 
 |---|---|
 | `00-plan/BRIEF-v2.md` | Governs. The mission, the questions, the map |
 | `00-plan/STATE.md` | The handover. Read first in any new session |
+| `00-plan/DECISIONS.md` | The decision log: every open choice, with the book's steer and when the build raises it |
+| `00-plan/EDIT-PLAN.md` | What the closing edit of 14 October 2026 agreed and did |
 | `01-sources/SOURCES.md` | The ledger — every source, how read, verified when |
 | `01-sources/RESEARCH-LOG.md` | The journey — one appended record of what was looked for, found, learned, left out and flagged, chapter by chapter |
-| `01-sources/LIBRARY-PASS.md` | What was found when abstract-only sources were read in full; the corrections proposed and not yet applied |
+| `01-sources/LIBRARY-PASS.md` | What was found when abstract-only sources were read in full; the ten corrections, applied on 14 October 2026 |
 | `02-research-notes/` | Working notes and agent returns worth keeping |
 | `03-tests/` | Probe candidates (`PROBES.md`) and protocols, as they accumulate |
-| `04-chapters/` | The chapters, version 2 |
+| `04-chapters/` | The seventeen chapters, finished 14 October 2026 |
 | `05-book/` | The reader, regenerated after any chapter edit |
-| `06-register/` | The rule register and the deviation log, generated from the Chapter 16 compilation by `build_register.py`; `work/` holds the classification files that carry each row's re-basing |
+| `06-register/` | The reference section: the rule register and the deviation log (generated from the Chapter 16 compilation by `build_register.py`; `work/` holds the classification files), and `working-record/`, how each chapter was made |
 | `07-checks/` | Reserved for the build-time checks Chapter 16 §8 specifies; empty |
+| `08-edit/` | The record of the closing edit: read log, issues register, briefs, chapter inventories and edit notes |
+| `08-review/` | A parked plan (11 October 2026) for reading the finished book to find what travels into the Vibe Map project plan |
 | `archive/` | Superseded material still cited somewhere, with a README |
 | `_to_delete/` | What Claude believes can go; Carly decides |
 
-## Now that the chapters exist
+## Now that the book is finished
 
-*Added 7 October 2026, when the seventeenth chapter was done. The method above is how the book was made; this is how to work with it now.*
+*Added 7 October 2026 when the seventeenth chapter was done; rewritten 14 October 2026 when the book was finished. The method above is how the book was made; this is how to work with it now.*
 
-The book is at draft 2 and Carly has not yet read it. An agent arriving now is a reader first: start from `00-plan/STATE.md`, which says what exists, what to know before relying on it, and what is open. Three things follow from the rules above and are easy to miss.
+The book is finished and published. An agent arriving now is a reader first: start from `00-plan/STATE.md`, which says what exists and what to know before relying on it. Four things follow from the rules above and are easy to miss.
 
-- **Rule 4 still holds.** A finding that bears on a chapter — a source read in full, a count that differs, a test result — is logged and flagged, and the chapter changes on Carly's word. `01-sources/LIBRARY-PASS.md` is the standing example: ten corrections proposed, none applied. A dated postscript at the end of a chapter, which leaves its body alone, is the most an agent adds unasked (Chapter 16 has one).
-- **The register is generated, not edited.** `06-register/rule-register.csv` comes from the compilation and the classification files in `06-register/work/`; change a chapter or a classification row and regenerate.
-- **New work gets an entry.** Frame it in the research log before starting, as Entry 19 onwards; ledger its sources with how each was read; update `STATE.md`.
+- **Rule 4 holds, with one change.** A finding that bears on a chapter is logged in the research log and the chapter changes on Carly's word. The flags no longer live in the chapters: the sections that carried them (the symmetry test, Looking back, Gaps found, the conflict log, Open questions and flags) are in `06-register/working-record/`, one file per chapter, word for word; the probe candidates are `03-tests/PROBES.md`; the open choices are `00-plan/DECISIONS.md`.
+- **Open choices carry a steer, never a gate.** Every open choice is in the decision log with the book's steer and the moment the build will raise it. Nothing in the chapters waits on anyone. A chapter never says "Carly decides", "review needed" or "awaiting".
+- **The register is generated, not edited.** `06-register/rule-register.csv` comes from the compilation and the classification files in `06-register/work/`; change a chapter or a classification row and regenerate. The register is the current statement of each rule's tier and the chapters' tables follow it. The register queries at the end of the decision log say where the chapter and the register disagree.
+- **Finishing includes retiring the status everywhere it is stated.** A change to a chapter is followed by the reader's rebuild and the republished artifact; a change to what the book is for is reflected in this file, the README, the state file and the Knowledge Base. New work gets a research-log entry, Entry 19 onwards, and its sources go in the ledger with how each was read.
 
 ## What never happens here
 

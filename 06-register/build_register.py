@@ -91,7 +91,7 @@ def parse():
 
 
 TIER_ORDER = ["Fixed (requirement)", "Fixed (sequence)", "Adaptable (house default)", "Adaptable", "Decorative",
-              "Statement of the record", "— (disputed; awaiting Carly)"]
+              "Statement of the record", "— (disputed; open in the decision log)"]
 
 
 def build():
@@ -173,13 +173,17 @@ def build():
     merged = []
     seen_wording = {}
     for r in register:
+        # the status value "awaiting Carly" was retired on 14 October 2026; the classification files may still carry it
+        for k in ("status", "open_part", "tier", "notes", "reason"):
+            if r.get(k):
+                r[k] = r[k].replace("awaiting Carly", "open in the decision log").replace("until Carly decides", "until the decision log settles it")
         ids = [x.strip() for x in r["chapters"].split(";")]
         if dag(ids) and "full text not read" not in r["status"]:
             r["status"] = (r["status"] + "; full text not read").strip("; ")
-        if r["open_part"] and not re.search(r"Adaptable|Fixed|awaiting|Decorative|requirement", r["open_part"]):
+        if r["open_part"] and not re.search(r"Adaptable|Fixed|awaiting|open in the decision log|Decorative|requirement", r["open_part"]):
             r["open_part"] += ": Adaptable"
-        if "awaiting Carly" in r["open_part"] and "awaiting Carly" not in r["status"]:
-            r["status"] = (r["status"] + "; awaiting Carly").strip("; ")
+        if "open in the decision log" in r["open_part"] and "open in the decision log" not in r["status"]:
+            r["status"] = (r["status"] + "; open in the decision log").strip("; ")
         for k in ("reason", "notes", "open_part"):
             r[k] = re.sub(r"DD-0(0[1-9]|10)\b", lambda m: SEC8["DD-0" + m.group(1)], r.get(k, ""))
         key = r["rule"].strip().lower()

@@ -1,8 +1,26 @@
-# The register and the deviation log
+# The reference section
 
-What the build inherits from the book (Chapter 16 §8). Generated on 7 October 2026; research log, Entry 17.
+*Behind the book. The chapters teach; this section holds the machinery an agent or a build needs, and the record of how the book was made.*
 
-- `rule-register.csv` / `rule-register.md` — 377 rules from the 513 rows of the sixteen chapters' rules tables. One rule per group of duplicates, stated once in a chapter's own words, with: the tier in Chapter 16's senses (Fixed as a requirement or a sequence; Adaptable (house default); Adaptable; Decorative) and the open part of any rule whose order is fixed and form is not; the reason for that tier; kind, sub-kind of Standard, and whether a Standard binds the studio (B) or is adopted (A); the source of the stated row; every chapter row that states the rule, as chapter.row; the form of its test and what is checked; the section of the record it writes to; its status (*current*, *superseded*, *disputed*, *awaiting Carly*, *full text not read*); and `cited_by`, left empty for the build. One statement of the record is listed apart as `DS-001`. Identifiers are provisional.
+The reader (`05-book/reader.html`) carries four of these as appendices: A, the rule register; B, the decision log; C, the deviation log; D, the probe candidates.
+
+| Part | File | Holds |
+|---|---|---|
+| Decision log | `00-plan/DECISIONS.md` | Every open choice in one place, each with the book's steer and the moment the build will raise it. The only place an open choice lives |
+| Rule register | `06-register/rule-register.md`, `.csv` | All 377 rules, stated once, with tier, kind, source, chapter rows, test, record and status. The current statement of each rule's tier |
+| Deviation log | `06-register/deviation-log.md` | The nine-line entry every departure from a rule is written to, and the entries so far |
+| Working record | `06-register/working-record/` | How each chapter was made: the sections moved out of the chapters on 14 October 2026, word for word |
+| Probes | `03-tests/PROBES.md` | Seventy-five small proposed tests; none has run |
+| Sources ledger | `01-sources/SOURCES.md` | Every source read, how and when |
+| Research log | `01-sources/RESEARCH-LOG.md` | Each chapter's plan, written before its research, and what it found |
+| Library pass | `01-sources/LIBRARY-PASS.md` | What was found when abstract-only sources were read in full; its ten corrections are applied |
+| Research notes | `02-research-notes/` | The agents' returns behind each chapter, and the compilation Chapter 16 was built from |
+
+## The register and the deviation log
+
+What the build inherits from the book (Chapter 16 §8). Generated on 7 October 2026; research log, Entry 17. On 14 October 2026 the status value "awaiting Carly" was renamed "open in the decision log" in both files, and rule DD-373's wording changed from "until Carly decides" to "until the decision log settles it"; the register was otherwise untouched by the closing edit, so its chapter-row section numbers (e.g. DD-316, DD-360, DD-373, DD-377) are those of draft 2 and will follow on the next regeneration.
+
+- `rule-register.csv` / `rule-register.md` — 377 rules from the 513 rows of the sixteen chapters' rules tables. One rule per group of duplicates, stated once in a chapter's own words, with: the tier in Chapter 16's senses (Fixed as a requirement or a sequence; Adaptable (house default); Adaptable; Decorative) and the open part of any rule whose order is fixed and form is not; the reason for that tier; kind, sub-kind of Standard, and whether a Standard binds the studio (B) or is adopted (A); the source of the stated row; every chapter row that states the rule, as chapter.row; the form of its test and what is checked; the section of the record it writes to; its status (*current*, *superseded*, *disputed*, *open in the decision log*, *full text not read*); and `cited_by`, left empty for the build. One statement of the record is listed apart as `DS-001`. Identifiers are provisional.
 - `deviation-log.md` — the nine-line entry every departure from a rule is written to, the extra lines for an expressive element (Chapter 14) and a borrowed mechanism (Chapter 15), and the entries. One so far, proposed.
 - `build_register.py` — `parse` reads `02-research-notes/ch16-assembly.md` Part 1 and Chapter 16's own table into `work/rows.csv` and `work/groups.csv`; `build` merges the classification files into the register. Run from the repository root. Do not edit the register by hand.
 
